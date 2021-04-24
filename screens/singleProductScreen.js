@@ -3,7 +3,7 @@ import { Image, Text, View, TouchableOpacity, StyleSheet, Alert } from 'react-na
 import { connect } from 'react-redux'
 import {purchase} from "../redux/actions/order"
 
-export default class Product extends Component {
+class Product extends Component {
 
     componentDidMount(){
         const {item} = this.props.route.params
@@ -72,7 +72,7 @@ const mapStateToProps = (state) => ({
   });
   
   // export default ProjectForm
-  export default connect(mapStateToProps, { login })(Login);
+  export default connect(mapStateToProps, { purchase })(Product);
 
 
 const styles =StyleSheet.create({
