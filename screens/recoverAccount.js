@@ -19,7 +19,7 @@ export default class Recover extends Component {
               <Text style={styles.forgot}>Enter Your Mnemonic Key</Text>
             </TouchableOpacity>
      
-            {/* <View style={styles.inputView} > */}
+            <View style={styles.inputView} >
             <TextInput
       style={styles.inputText}
       underlineColorAndroid="transparent"
@@ -28,7 +28,7 @@ export default class Recover extends Component {
       numberOfLines={20}
       multiline={true}
     />
-            {/* </View> */}
+            </View>
             
             <TouchableOpacity style={styles.recoverBtn} 
             // onPress = {()=>{
@@ -62,7 +62,7 @@ const styles =  StyleSheet.create({
         width:"80%",
         backgroundColor:"#465881",
         borderRadius:25,
-        height:50,
+        height:200,
         marginBottom:20,
         justifyContent:"center",
         padding:20
