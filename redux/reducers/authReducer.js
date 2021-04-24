@@ -9,7 +9,7 @@ import {
  import axios from "axios"
 
  const initialState ={
-     address:localStorage.getItem("token"),
+     userAddress:localStorage.getItem("token"),
      isAuthenticated:null,
      isLoading:false,
      user:[],
