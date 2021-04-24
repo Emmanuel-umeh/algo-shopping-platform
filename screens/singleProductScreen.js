@@ -6,7 +6,7 @@ import {
   TouchableOpacity,
   StyleSheet,
   Alert,
-  ActivityIndicator
+  ActivityIndicator,
 } from "react-native";
 import { connect } from "react-redux";
 import { purchase } from "../redux/actions/order";
@@ -21,47 +21,48 @@ class Product extends Component {
   }
 
   state = {
-      loading : false
-  }
+    loading: false,
+  };
 
   purchaseProduct = () => {
     const { item } = this.props.route.params;
-    const {mnemonic} = this.props.auth
-    let price = item.price
-    console.log({price})
-    
+    const { mnemonic } = this.props.auth;
+    let price = item.price;
+    console.log({ price });
+
     Alert.alert("Confirm", "Are you sure you want to purchase this product?", [
       {
         text: "Cancel",
         onPress: () => console.log("Cancel Pressed"),
         style: "cancel",
       },
-      { text: "OK", onPress: async() =>{
+      {
+        text: "OK",
+        onPress: async () => {
           this.setState({
-              loading : true
-          })
+            loading: true,
+          });
 
-         var response = await this.props.purchase(price,mnemonic )
-         
+          var response = await this.props.purchase(price, mnemonic);
 
-         this.setState({
-            loading : false
-        })
+          this.setState({
+            loading: false,
+          });
 
-        alert(response)
-      } },
+          alert(response);
+        },
+      },
     ]);
   };
   render() {
     const { item } = this.props.route.params;
     return (
       <View style={styles.container}>
-
-          {
-              this.state.loading &&  <View style = {styles.spinner}>
-                  
-                  <ActivityIndicator size="large" color="crimson" /> </View> 
-          }
+        {this.state.loading && (
+          <View style={styles.spinner}>
+            <ActivityIndicator size="large" color="crimson" />
+          </View>
+        )}
         <Image
           style={styles.image}
           source={{
@@ -129,11 +130,11 @@ const styles = StyleSheet.create({
   loginText: {
     color: "white",
   },
-  spinner : {
-      flex : 1,
-      position : "absolute",
-      alignItems : "center",
-      alignContent : "center",
-      justifyContent : "center"
-  }
+  spinner: {
+    flex: 1,
+    position: "absolute",
+    alignItems: "center",
+    alignContent: "center",
+    justifyContent: "center",
+  },
 });
