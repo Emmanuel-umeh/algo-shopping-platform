@@ -75,7 +75,7 @@ export const recover = (mnemonic) => async (dispatch, getState) => {
   
       
       const response = await axios.get(
-        `/recover`
+        `/recover`, body, config
       );
   
       const {addr, mnemonic, isValid} = response
