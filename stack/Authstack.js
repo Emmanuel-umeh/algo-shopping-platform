@@ -16,6 +16,9 @@ const Authstack = ({navigation}) => (
     
          <Stack.Screen name="Login" component={Login}/>
         
+    
+         <Stack.Screen name="Recover" component={Login}/>
+        
 
 
 
