@@ -104,4 +104,19 @@ const styles = StyleSheet.create({
     backgroundColor: "whitesmoke",
     paddingTop: 50,
   },
+
+  loginBtn:{
+    width:"80%",
+    backgroundColor:"#fb5b5a",
+    borderRadius:25,
+    height:50,
+    alignItems:"center",
+    justifyContent:"center",
+    marginTop:40,
+    marginBottom:10
+  },
+
+  loginText:{
+    color:"white"
+  }
 });
