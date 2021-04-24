@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, StyleSheet, TextInput , TouchableOpacity} from 'react-native'
+import { Text, View, StyleSheet, TextInput , TextArea, TouchableOpacity} from 'react-native'
 
 export default class Recover extends Component {
     render() {
@@ -21,6 +21,7 @@ export default class Recover extends Component {
      
             <View style={styles.inputView} >
               <TextArea  
+              
                 style={styles.inputText}
                 placeholder="Email..." 
                 placeholderTextColor="#003f5c"
