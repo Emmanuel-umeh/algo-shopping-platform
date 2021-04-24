@@ -44,7 +44,21 @@ export default class Shop extends Component {
   componentDidMount(){
        this.props.navigation.setOptions({
       headerRight: () => (
-        <Button onPress={() => setCount(c => c + 1)} title="Update count" />
+          <Ionicons name="power" size={32} color="white" onPress = {()=>{
+            Alert.alert("Confirm", "Are you sure you want to logout?", [
+              {
+                text: "Cancel",
+                onPress: () => console.log("Cancel Pressed"),
+                style: "cancel",
+              },
+              {
+                text: "OK",
+                onPress: async () => {
+                  this.props.logout()
+                },
+              },
+            ]);
+          }} />
       ),
     });
   }
