@@ -62,11 +62,11 @@ import {
             
                 return{
                     ...state,
-                    token:null, 
-                    user:null,
+                 
+                    userAddress:null,
                     isAuthenticated:false,
                     isLoading:false,
-                    type:'LOGOUT_SUCCESS'
+                    type:action.type
                 }
             
         case REGISTER_FAIL:
