@@ -27,7 +27,10 @@ const RootStack = ({ navigation }) => (
           alignSelf: "center",
         },
         headerRight: () => (
-          <Ionicons name="power" size={32} color="white" />
+          <Ionicons name="power" size={32} color="white" onPress = {()=>{
+            // Alert.alert()
+            console.log("s")
+          }} />
         ),
       }}
       
