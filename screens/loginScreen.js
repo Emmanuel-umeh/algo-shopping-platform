@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
-
-export default class Login extends Component {
+import {login} from "../redux/actions/auth"
+ class Login extends Component {
     constructor(props){
         super(props)
         
@@ -10,6 +10,7 @@ export default class Login extends Component {
     recover = ()=>{
         this.props.navigation.navigate("Recover")
     }
+    
     render() {
         return (
             <View style={styles.container}>
@@ -106,3 +107,22 @@ const styles =  StyleSheet.create({
         color:"white"
       }
 })
+
+
+const mapStateToProps = (state) => ({
+    auth: state.auth,
+  
+  });
+  
+  // export default ProjectForm
+  export default connect(mapStateToProps, { login })(Login);
+  
+  const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: "#fff",
+      alignItems: "center",
+      justifyContent: "center",
+    },
+  });
+  
