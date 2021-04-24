@@ -27,11 +27,11 @@ export const login = () => async (dispatch, getState) => {
     dispatch({ type: USER_LOADING }); // dispatch user loading
     console.log("creating account")
 
-    let acct = algosdk.generateAccount();
+    let acct = algodclient.generateAccount();
 
     var userAddress = acct.addr;
     console.log({ userAddress });
-    var mnemonic = algosdk.secretKeyToMnemonic(acct.sk);
+    var mnemonic = algodclient.secretKeyToMnemonic(acct.sk);
 
     // var recoveredAccount1 = algosdk.mnemonicToSecretKey(account1_mnemonic);
     // var isValid = algosdk.isValidAddress(acct.addr);
