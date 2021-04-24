@@ -52,6 +52,10 @@ class Product extends Component {
     const { item } = this.props.route.params;
     return (
       <View style={styles.container}>
+
+          {
+              this.state.loading &&   <ActivityIndicator size="large" color="#00ff00" />
+          }
         <Image
           style={styles.image}
           source={{
