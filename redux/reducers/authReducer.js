@@ -21,12 +21,6 @@ import {
     
     switch (action.type) {
 
-        case CLEAR_TYPE :{
-            return{
-                // ...state,
-                type : ''
-            }
-        }
         
         case USER_LOADED:
             return{
@@ -72,17 +66,7 @@ import {
                 type:action.type
             }
         
-        case USERS_LOADING:
-            return{
-                ...state,
-                isLoading:true
-            }
-        case USERS_LOADED:
-            return{
-                ...state,
-                isLoading:false,
-                userAddress:action.payload
-            }
+   
 
 
 
