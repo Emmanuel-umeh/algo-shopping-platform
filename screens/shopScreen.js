@@ -72,7 +72,9 @@ export default class Shop extends Component {
         >
 
             <View>
-                Welcome
+                <Text>Welcome
+                    
+                </Text>
             </View>
           <Carousel
             layout={"default"}
