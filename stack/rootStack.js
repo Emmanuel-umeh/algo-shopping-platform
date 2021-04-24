@@ -25,5 +25,5 @@ const mapStateToProps = (state) => ({
   });
   
   // export default ProjectForm
-  export default connect(mapStateToProps )(RootStackScreen);
+  export default connect(mapStateToProps, null)(RootStackScreen);
   
