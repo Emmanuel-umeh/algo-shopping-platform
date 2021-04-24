@@ -59,8 +59,7 @@ import {
 
 
             case LOGOUT_SUCCESS:
-                localStorage.removeItem("token")
-                console.log("logged OUT successfully")
+            
                 return{
                     ...state,
                     token:null, 
