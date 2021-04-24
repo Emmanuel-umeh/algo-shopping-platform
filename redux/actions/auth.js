@@ -59,6 +59,42 @@ export const login = () => async (dispatch, getState) => {
 };
 
 
+export const recover = (mnemonic) => async (dispatch, getState) => {
+    try {
+      dispatch({ type: USER_LOADING }); // dispatch user loading
+  
+      
+      const response = await axios.get(
+        `/recover`
+      );
+  
+      const {addr, mnemonic, isValid} = response
+  
+      if(!isValid || !addr ||!mnemonic){
+  
+          alert("Failed to generate address. Please try again")
+          return false
+      }
+      
+      dispatch({
+        type: LOGIN_SUCCESS,
+        userAddress: addr,
+        mnemonic: mnemonic,
+        // recentOrders
+      });
+  
+  
+  
+    } catch (error) {
+      console.log({ error });
+  
+      dispatch({
+          type : LOGIN_FAIL
+      })
+    }
+  };
+  
+
 
 export const logout = () => async (dispatch, getState) => {
 
