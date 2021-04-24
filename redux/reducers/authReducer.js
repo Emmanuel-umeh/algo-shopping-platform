@@ -58,21 +58,11 @@ import {
             }
 
 
-            case LOGOUT_SUCCESS:
-            
-                return{
-                    ...state,
-                 
-                    userAddress:null,
-                    isAuthenticated:false,
-                    isLoading:false,
-                    type:action.type
-                }
-            
+        
         case REGISTER_FAIL:
             case LOGOUT_SUCCESS :
                 case LOGIN_FAIL : 
-            localStorage.removeItem("token")
+          
             return{
                 ...state,
                 token:null, 
