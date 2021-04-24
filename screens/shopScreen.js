@@ -40,7 +40,7 @@ export default class Shop extends Component {
       ],
     };
   }
-  _renderItem({ item, index }) {
+  _renderItem =({ item, index }) => {
     return (
       <View style={styles.carousel}>
         <Image
