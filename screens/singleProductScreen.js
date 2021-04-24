@@ -17,7 +17,7 @@ export default class Product extends Component {
             <View style = {
                 styles.container
             }>
-            <Image source ={{
+            <Image style = {styles.image} source ={{
                 uri : item.image
             }} />
 
