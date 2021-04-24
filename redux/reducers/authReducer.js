@@ -33,7 +33,7 @@ import {
                 ...state,
                 isAuthenticated:true, 
                 isLoading:false,
-                user:action.payload,
+                userAddress:action.payload,
                 type:'USER_LOADED'
             }
 
