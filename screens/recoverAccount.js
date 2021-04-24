@@ -36,7 +36,7 @@ const {width,height} = Dimensions.get("window")
    
     }
     render() {
-        console.log(this.state)
+   
         return (
             <View style={styles.container}>
                   {this.state.loading && (
@@ -63,7 +63,7 @@ const {width,height} = Dimensions.get("window")
       style={styles.inputText}
 
       onChangeText = {(mnemonic)=>{
-        //   console.log({mnemonic})
+
         this.setState({
             mnemonic
         })
