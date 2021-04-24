@@ -134,7 +134,7 @@ const styles = StyleSheet.create({
   },
   spinner: {
       position : "absolute",
-    marginTop : height/1.6,
+    marginTop : height/2.3,
     marginLeft :width/2,
     zIndex : 999
   },
