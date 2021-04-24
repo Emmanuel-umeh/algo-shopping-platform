@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View } from 'react-native'
+import { Text, View, StyleSheet } from 'react-native'
 
 export default class Login extends Component {
     render() {
@@ -12,3 +12,11 @@ export default class Login extends Component {
         )
     }
 }
+
+
+const styles =  StyleSheet.create({
+    container : {
+        alignContent : "center",
+        justifyContent : "center"
+    }
+})
