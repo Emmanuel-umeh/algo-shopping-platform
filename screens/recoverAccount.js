@@ -41,7 +41,7 @@ const {width,height} = Dimensions.get("window")
             <View style={styles.container}>
                   {this.state.loading && (
           <View style={styles.spinner}>
-            <ActivityIndicator size="large" color="white" />
+            <ActivityIndicator size="large" color="crimson" />
           </View>
         )}
             <Text style={styles.logo}>Recover</Text>
