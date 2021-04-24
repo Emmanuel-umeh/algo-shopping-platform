@@ -25,7 +25,7 @@ export default class Recover extends Component {
       underlineColorAndroid="transparent"
       placeholder="Type something"
       placeholderTextColor="grey"
-      numberOfLines={10}
+      numberOfLines={20}
       multiline={true}
     />
             </View>
@@ -68,7 +68,7 @@ const styles =  StyleSheet.create({
         padding:20
       },
       inputText:{
-        height:50,
+        height:0,
         color:"white"
       },
       forgot:{
