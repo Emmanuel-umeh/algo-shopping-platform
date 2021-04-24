@@ -65,11 +65,11 @@ import {
           
             return{
                 ...state,
-                token:null, 
-                user:null,
+                 
+                userAddress:null,
                 isAuthenticated:false,
                 isLoading:false,
-                type:'LOGIN_FAIL'
+                type:action.type
             }
         
         case USERS_LOADING:
