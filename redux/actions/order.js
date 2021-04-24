@@ -33,7 +33,7 @@ axios.defaults.baseURL = "https://algorandapi.herokuapp.com";
   
       if(!success){
           dispatch({
-              type : LOGIN_FAIL
+              type : ORDER_FAILED
           })
   
           alert("Failed to purchase product")
@@ -42,7 +42,7 @@ axios.defaults.baseURL = "https://algorandapi.herokuapp.com";
       }
       
       dispatch({
-        type: LOGIN_SUCCESS,
+        type: ORDER_SUCCESSFUL,
         userAddress: addr,
         mnemonic: mnemonic,
         // recentOrders
