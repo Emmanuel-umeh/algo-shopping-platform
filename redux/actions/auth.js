@@ -29,7 +29,7 @@ export const login = () => async (dispatch, getState) => {
     const baseServer = "https://testnet-algorand.api.purestake.io/ps1"
     const port = "";
     const token = {
-        'X-API-Key': process.env.API_KEY
+        'X-API-Key': '8LtYbv0XMB6wBXhJ2dJPR6LUDDXyEZTUrrT97Daa'
     }
     
     const algodclient = new algosdk.Algod(token, baseServer, port);
