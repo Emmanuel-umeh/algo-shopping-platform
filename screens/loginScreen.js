@@ -23,7 +23,8 @@ export default class Login extends Component {
 
 const styles =  StyleSheet.create({
     container : {
-        alignContent : "center",
+        flex : 1,
+        alignItems : "center",
         justifyContent : "center"
     }
 })
