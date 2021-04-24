@@ -105,7 +105,7 @@ const styles = StyleSheet.create({
     padding: 5,
     marginLeft: 25,
     marginRight: 25,
-  },
+    alignItems : "center"  },
 
   image : {
       height : "90%",
