@@ -75,7 +75,7 @@ export const recover = (mnemonic) => async (dispatch, getState) => {
         `/auth/recover`, body, config
       );
   
-      const {address, mnemonic} = response
+      const {address, mnemonic} = response.data
   
       if( !address ||!mnemonic){
   
