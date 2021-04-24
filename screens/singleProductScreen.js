@@ -132,6 +132,7 @@ const styles = StyleSheet.create({
   },
   spinner: {
     marginTop : "45%",
+    marginLeft : "45%",
     zIndex : 999
   },
 });
