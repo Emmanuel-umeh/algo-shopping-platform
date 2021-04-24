@@ -58,7 +58,9 @@ class Product extends Component {
       <View style={styles.container}>
 
           {
-              this.state.loading &&   <ActivityIndicator size="large" color="crimson" />
+              this.state.loading &&  <View style = {styles.spinner}>
+                  
+                  <ActivityIndicator size="large" color="crimson" /> </View> 
           }
         <Image
           style={styles.image}
@@ -127,4 +129,11 @@ const styles = StyleSheet.create({
   loginText: {
     color: "white",
   },
+  spinner : {
+      flex : 1,
+      position : "absolute",
+      alignItems : "center",
+      alignContent : "center",
+      justifyContent : "center"
+  }
 });
