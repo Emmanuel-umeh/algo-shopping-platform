@@ -51,7 +51,7 @@ export default class Shop extends Component {
           }}
         />
         <Text style={{fontSize: 30}}>{item.title} </Text>
-        <Text> {item.price}algos</Text>
+        <Text> {item.price} algos</Text>
             {/* <Text></Text> */}
 
             <TouchableOpacity style={styles.loginBtn} onPress = {()=>{
