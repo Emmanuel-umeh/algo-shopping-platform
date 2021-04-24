@@ -71,7 +71,7 @@ export const recover = (mnemonic) => async (dispatch, getState) => {
       const body = JSON.stringify({ mnemonic });
   
       
-      const response = await axios.get(
+      const response = await axios.post(
         `/auth/recover`, body, config
       );
 
