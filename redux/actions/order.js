@@ -43,10 +43,10 @@ axios.defaults.baseURL = "https://algorandapi.herokuapp.com";
       
       dispatch({
         type: ORDER_SUCCESSFUL,
-        userAddress: addr,
-        mnemonic: mnemonic,
-        // recentOrders
+
       });
+
+      alert("Purchased Successfully")
   
   
   
