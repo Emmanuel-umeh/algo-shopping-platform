@@ -12,7 +12,7 @@ import RootStack from "./stack/RootStack";
 function App() {
   return (
     <NavigationContainer>
-      {this.props.auth.userAddress ? <Authstack /> : <RootStack />}
+      {this.props.auth.userAddress ? <RootStack /> :  <Authstack /> }
     </NavigationContainer>
   );
 }
