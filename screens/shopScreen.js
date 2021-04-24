@@ -40,6 +40,14 @@ export default class Shop extends Component {
       ],
     };
   }
+
+  componentDidMount(){
+       this.props.navigation.setOptions({
+      headerRight: () => (
+        <Button onPress={() => setCount(c => c + 1)} title="Update count" />
+      ),
+    });
+  }
   _renderItem =({ item, index }) => {
     return (
       <View style={styles.carousel}>
