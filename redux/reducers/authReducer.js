@@ -41,7 +41,7 @@ import {
             };
 
         case LOGIN_SUCCESS:
-        case REGISTER_SUCCESS:
+
           
             return{
                 ...state,
@@ -53,7 +53,7 @@ import {
 
 
         
-        case REGISTER_FAIL:
+        
            case AUTH_ERROR : 
             case LOGOUT_SUCCESS :
                 case LOGIN_FAIL : 
