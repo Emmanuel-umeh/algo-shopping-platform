@@ -27,7 +27,7 @@ const RootStack = ({ navigation }) => (
           alignSelf: "center",
         },
         headerRight: () => (
-          <Ionicons name="md-checkmark-circle" size={32} color="green" />
+          <Ionicons name="log-out" size={32} color="green" />
         ),
       }}
       
