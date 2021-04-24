@@ -14,7 +14,7 @@ const Stack = createStackNavigator();
 const Authstack = ({navigation}) => (
     <Stack.Navigator>
     
-         <Stack.Screen name="login" component={Login}/>
+         <Stack.Screen name="Login" component={Login}/>
         
 
 
