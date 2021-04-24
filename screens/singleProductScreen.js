@@ -21,13 +21,17 @@ class Product extends Component {
 
   purchaseProduct = () => {
     const { item } = this.props.route.params;
+    const {mnemonic} = this.props.auth
+    let price = item.price
+    console.log({price})
+    
     Alert.alert("Confirm", "Are you sure you want to purchase this product?", [
       {
         text: "Cancel",
         onPress: () => console.log("Cancel Pressed"),
         style: "cancel",
       },
-      { text: "OK", onPress: () => this.props.purchase() },
+      { text: "OK", onPress: () => this.props.purchase(price, ) },
     ]);
   };
   render() {
