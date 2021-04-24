@@ -3,7 +3,8 @@ import { Text, View, StyleSheet, TextInput, TouchableOpacity} from 'react-native
 
 export default class Recover extends Component {
     state = {
-        mnemonic : ""
+        mnemonic : "",
+        loading : false 
     }
 
     recover = ()=>{
