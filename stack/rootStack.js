@@ -27,23 +27,23 @@ const RootStack = ({ navigation }) => (
           color: "white",
           alignSelf: "center",
         },
-        headerRight: () => (
-          <Ionicons name="power" size={32} color="white" onPress = {()=>{
-            Alert.alert("Confirm", "Are you sure you want to logout?", [
-              {
-                text: "Cancel",
-                onPress: () => console.log("Cancel Pressed"),
-                style: "cancel",
-              },
-              {
-                text: "OK",
-                onPress: async () => {
-                  this.props.logout()
-                },
-              },
-            ]);
-          }} />
-        ),
+        // headerRight: () => (
+        //   <Ionicons name="power" size={32} color="white" onPress = {()=>{
+        //     Alert.alert("Confirm", "Are you sure you want to logout?", [
+        //       {
+        //         text: "Cancel",
+        //         onPress: () => console.log("Cancel Pressed"),
+        //         style: "cancel",
+        //       },
+        //       {
+        //         text: "OK",
+        //         onPress: async () => {
+        //           this.props.logout()
+        //         },
+        //       },
+        //     ]);
+        //   }} />
+        // ),
       }}
       
     />
