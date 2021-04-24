@@ -56,9 +56,7 @@ export default class Shop extends Component {
             <TouchableOpacity style={styles.loginBtn} onPress = {()=>{
                 //   this.createAccount()
                 // alert("clicked")
-                this.props.navigation.navigate("Product" , {
-                    item
-                })
+             this.goToSingleProduct(item)
               }}>
               <Text style={styles.loginText} >Purchase With Algos</Text>
             </TouchableOpacity>
@@ -67,6 +65,12 @@ export default class Shop extends Component {
     );
   }
 
+
+  goToSingleProduct = (item)=>{
+    this.props.navigation.navigate("Product" , {
+        item
+    })
+  }
   render() {
     return (
       <SafeAreaView style={styles.container}>
