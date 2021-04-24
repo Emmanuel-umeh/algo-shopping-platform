@@ -19,3 +19,11 @@ const RootStackScreen = ({navigation}) => (
          <RootStack.Screen name="shop" component={Shop}/>
     </RootStack.Navigator>
 );
+
+const mapStateToProps = (state) => ({
+    auth: state.auth,
+  });
+  
+  // export default ProjectForm
+  export default connect(mapStateToProps, { loadUser })(RootStackScreen);
+  
