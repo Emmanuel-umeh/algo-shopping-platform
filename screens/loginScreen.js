@@ -25,11 +25,13 @@ export default class Login extends Component {
                 placeholderTextColor="#003f5c"
                 onChangeText={text => this.setState({password:text})}/>
             </View> */}
+     
+            <TouchableOpacity style={styles.loginBtn}>
+              <Text style={styles.loginText}>Create An Account</Text>
+            </TouchableOpacity>
+
             <TouchableOpacity>
               <Text style={styles.forgot}>Forgot Password?</Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.loginBtn}>
-              <Text style={styles.loginText}>LOGIN</Text>
             </TouchableOpacity>
             <TouchableOpacity>
               <Text style={styles.loginText}>Signup</Text>
