@@ -54,32 +54,19 @@ import {
 
         
         case REGISTER_FAIL:
+           case AUTH_ERROR : 
             case LOGOUT_SUCCESS :
                 case LOGIN_FAIL : 
           
             return{
-                ...state,
-                 
-                userAddress:null,
-                isAuthenticated:false,
-                isLoading:false,
-                type:action.type
+                state
             }
         
    
 
 
 
-                    case AUTH_ERROR:
-                        return{
-                            token:null,
-                            isAuthenticated:null,
-                            isLoading:false,
-                            user:[],
-                            profile:[],
-                            type:'',
-                            type:'AUTH_ERROR'
-                        }
+                
         default:
             return state;
     }
