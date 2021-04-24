@@ -44,6 +44,8 @@ export default class Shop extends Component {
     return (
       <View style={styles.carousel}>
         <Image
+
+        style = {styles.image}
           source={{
             uri: item.image,
           }}
@@ -83,6 +85,11 @@ const styles = StyleSheet.create({
     padding: 50,
     marginLeft: 25,
     marginRight: 25,
+  },
+
+  image : {
+      height : "80%",
+      width : "100%"
   },
   container: {
     flex: 1,
