@@ -26,6 +26,14 @@ export default class Product extends Component {
                 <Text style = {styles.text}>Price : {item.price} algos</Text>
                 
 
+                <TouchableOpacity style={styles.loginBtn} onPress = {()=>{
+                //   this.createAccount()
+                alert("clicked")
+            //  this.goToSingleProduct(item)
+              }}>
+              <Text style={styles.loginText} >Purchase With Algos</Text>
+            </TouchableOpacity>
+
             </View>
 
             </View>
