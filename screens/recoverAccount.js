@@ -13,6 +13,8 @@ import {recover} from "../redux/actions/auth"
             this.setState({
                 loading : true
             })
+
+         await  this.props.recover(this.state.mnemonic)
     
             this.setState({
                 loading : false
