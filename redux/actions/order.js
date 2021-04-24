@@ -12,9 +12,20 @@ axios.defaults.baseURL = "https://algorandapi.herokuapp.com";
   export const makeOrder = (name, price) => async (dispatch, getState) => {
     try {
 
+        
+      const config = {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      };
+
+      const body = JSON.stringify({ name,price });
+  
+      
+
       
       const response = await axios.post(
-        `/auth/makeOrder`
+        `/auth/makeOrder`,  body,config
       );
   
       // console.log({response})
