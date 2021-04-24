@@ -11,14 +11,3 @@ export default class Shop extends Component {
     }
 }
 
-
-Shop.navigationOptions = navData => {
-    title = {
-      text:
-        'All Products',
-      style: {
-        color: Colors.textLight,
-        fontSize: 20
-      }
-    }
-}
