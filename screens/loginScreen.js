@@ -33,8 +33,9 @@ export default class Login extends Component {
             <TouchableOpacity>
               <Text style={styles.forgot}>Already have an account?</Text>
             </TouchableOpacity>
-            <TouchableOpacity>
-              <Text style={styles.loginText}>Recover </Text>
+            
+            <TouchableOpacity style={styles.loginBtn}>
+              <Text style={styles.loginText}>Recover Account</Text>
             </TouchableOpacity>
     
       
