@@ -102,6 +102,17 @@ export const recover = (mnemonic) => async (dispatch, getState) => {
   };
   
 
+  export const logout = () => async (dispatch, getState) => {
+ 
+ 
+      dispatch({
+        type: LOGOUT_SUCCESS,
+    
+      });
+  
+  };
+  
+
 
 export const logout = () => async (dispatch, getState) => {
 
