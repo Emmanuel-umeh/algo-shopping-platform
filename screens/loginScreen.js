@@ -39,6 +39,12 @@ import {login} from "../redux/actions/auth"
     render() {
         return (
             <View style={styles.container}>
+
+{this.state.loading && (
+          <View style={styles.spinner}>
+            <ActivityIndicator size="large" color="crimson" />
+          </View>
+        )}
             <Text style={styles.logo}>Fashion Store</Text>
          
      
