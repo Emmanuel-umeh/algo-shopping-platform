@@ -58,7 +58,7 @@ export default class Shop extends Component {
                 // alert("clicked")
              this.goToSingleProduct(item)
               }}>
-              <Text style={styles.loginText} >Purchase With Algos</Text>
+              <Text style={styles.loginText} >Purchase Product</Text>
             </TouchableOpacity>
 
       </View>
