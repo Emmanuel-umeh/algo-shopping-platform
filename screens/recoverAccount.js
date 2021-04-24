@@ -20,7 +20,7 @@ export default class Recover extends Component {
             </TouchableOpacity>
      
             <View style={styles.inputView} >
-              <TextInput  
+              <TextArea  
                 style={styles.inputText}
                 placeholder="Email..." 
                 placeholderTextColor="#003f5c"
