@@ -7,7 +7,7 @@ import {recover} from "../redux/actions/auth"
         loading : false 
     }
 
-    recover = ()=>{
+    recover = async()=>{
 
         try {
             this.setState({
