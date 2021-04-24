@@ -5,7 +5,7 @@ export default class Recover extends Component {
     render() {
         return (
             <View style={styles.container}>
-            <Text style={styles.logo}>Recover Account</Text>
+            <Text style={styles.logo}>Recover</Text>
             {/* 
             <View style={styles.inputView} >
               <TextInput  
