@@ -34,7 +34,7 @@ export default class Login extends Component {
               <Text style={styles.forgot}>Already have an account?</Text>
             </TouchableOpacity>
             
-            <TouchableOpacity style={styles.loginBtn}>
+            <TouchableOpacity style={styles.loginBtn2}>
               <Text style={styles.loginText}>Recover Account</Text>
             </TouchableOpacity>
     
@@ -79,6 +79,16 @@ const styles =  StyleSheet.create({
       loginBtn:{
         width:"80%",
         backgroundColor:"#fb5b5a",
+        borderRadius:25,
+        height:50,
+        alignItems:"center",
+        justifyContent:"center",
+        marginTop:40,
+        marginBottom:10
+      },
+      recoverBtn:{
+        width:"80%",
+        backgroundColor:"blue",
         borderRadius:25,
         height:50,
         alignItems:"center",
