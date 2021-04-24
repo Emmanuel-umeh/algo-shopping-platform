@@ -4,8 +4,7 @@ import {
     AUTH_ERROR,
     LOGIN_SUCCESS, 
     LOGIN_FAIL,
-    LOGOUT_SUCCESS, 
-    CLEAR_TYPE
+    LOGOUT_SUCCESS
  } from "../action/types"
  import axios from "axios"
 
