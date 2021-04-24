@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Text, View, StyleSheet, Image, SafeAreaView, TouchableOpacity } from "react-native";
+import { Text, View, StyleSheet, Image, SafeAreaView, TouchableOpacity, Alert } from "react-native";
 import Carousel from "react-native-snap-carousel";
 import { Ionicons } from '@expo/vector-icons';
 import {logout} from "../redux/actions/auth"
