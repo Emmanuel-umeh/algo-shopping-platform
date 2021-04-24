@@ -6,6 +6,10 @@ export default class Login extends Component {
         super(props)
         
     }
+
+    recover = ()=>{
+        this.props.navigation.navigate("Recover")
+    }
     render() {
         return (
             <View style={styles.container}>
@@ -34,7 +38,9 @@ export default class Login extends Component {
               <Text style={styles.forgot}>Already have an account?</Text>
             </TouchableOpacity>
             
-            <TouchableOpacity style={styles.recoverBtn}>
+            <TouchableOpacity style={styles.recoverBtn} onPress = {()=>{
+                this.recover()
+            }}> 
               <Text style={styles.loginText}>Recover Account</Text>
             </TouchableOpacity>
     
