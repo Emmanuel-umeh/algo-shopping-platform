@@ -8,6 +8,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import Authstack from "./stack/Authstack";
 import RootStack from "./stack/RootStack";
+import { connect } from "react-redux";
 
 function App() {
   return (
