@@ -16,6 +16,7 @@ const Authstack = ({navigation}) => (
     
          <Stack.Screen name="Login" component={Login} options ={{
          headerShown : false
+        
          
          }}/>
         
