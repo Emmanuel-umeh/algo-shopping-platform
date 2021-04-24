@@ -29,5 +29,5 @@ const mapStateToProps = (state) => ({
   });
   
   // export default ProjectForm
-  export default connect(mapStateToProps, { loadUser })(AuthenticatedStack);
+  export default connect(mapStateToProps, null)(AuthenticatedStack);
   
