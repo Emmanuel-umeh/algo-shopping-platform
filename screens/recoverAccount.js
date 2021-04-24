@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Text, View, StyleSheet, TextInput, TouchableOpacity} from 'react-native'
+import { connect } from 'react-redux'
 import {recover} from "../redux/actions/auth"
+
  class Recover extends Component {
     state = {
         mnemonic : "",
