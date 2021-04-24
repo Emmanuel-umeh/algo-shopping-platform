@@ -60,7 +60,9 @@ class Product extends Component {
       <View style={styles.container}>
         {this.state.loading && (
           <View style={styles.spinner}>
-            <ActivityIndicator size="large" color="crimson" />
+            <ActivityIndicator style={{
+                alignSelf : "center"
+            }} size="large" color="crimson" />
           </View>
         )}
         <Image
