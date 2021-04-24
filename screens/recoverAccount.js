@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import { Text, View, StyleSheet, TextInput, TouchableOpacity} from 'react-native'
 
 export default class Recover extends Component {
+    state = {
+        mnemonic : ""
+    }
     render() {
         return (
             <View style={styles.container}>
@@ -24,7 +27,10 @@ export default class Recover extends Component {
       style={styles.inputText}
 
       onChangeText = {(mnemonic)=>{
-          console.log({mnemonic})
+        //   console.log({mnemonic})
+        this.setState({
+            mnemonic
+        })
       }}
       underlineColorAndroid="transparent"
       placeholder="Type something"
