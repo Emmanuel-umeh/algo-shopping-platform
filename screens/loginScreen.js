@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
+import { connect } from 'react-redux';
 import {login} from "../redux/actions/auth"
  class Login extends Component {
     constructor(props){
