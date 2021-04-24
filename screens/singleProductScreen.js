@@ -37,13 +37,13 @@ class Product extends Component {
           })
 
          var response = await this.props.purchase(price,mnemonic )
-         if(response){
-
-         }
+         
 
          this.setState({
             loading : false
         })
+
+        alert(response)
       } },
     ]);
   };
