@@ -5,6 +5,7 @@ export default class Product extends Component {
 
     componentDidMount(){
         const {item} = this.props.route.params
+        console.log({item})
         if(!item){
             this.props.navigation.pop()
         }  
