@@ -5,7 +5,7 @@ export default class Recover extends Component {
     render() {
         return (
             <View style={styles.container}>
-            <Text style={styles.logo}>Fashion Store</Text>
+            <Text style={styles.logo}>Recover Account</Text>
             {/* <View style={styles.inputView} >
               <TextInput  
                 style={styles.inputText}
@@ -21,18 +21,21 @@ export default class Recover extends Component {
                 placeholderTextColor="#003f5c"
                 onChangeText={text => this.setState({password:text})}/>
             </View> */}
+               <TouchableOpacity>
+              <Text style={styles.forgot}>Enter Your Mnemonic Key</Text>
+            </TouchableOpacity>
      
             <TouchableOpacity style={styles.loginBtn}>
               <Text style={styles.loginText}>Create An Account</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity>
-              <Text style={styles.forgot}>Already have an account?</Text>
-            </TouchableOpacity>
+         
             
-            <TouchableOpacity style={styles.recoverBtn} onPress = {()=>{
-                this.recover()
-            }}> 
+            <TouchableOpacity style={styles.recoverBtn} 
+            // onPress = {()=>{
+            //     this.recover()
+            // }}
+            > 
               <Text style={styles.loginText}>Recover Account</Text>
             </TouchableOpacity>
     
