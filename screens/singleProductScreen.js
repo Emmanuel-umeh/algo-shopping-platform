@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
   StyleSheet,
   Alert,
+  ActivityIndicator
 } from "react-native";
 import { connect } from "react-redux";
 import { purchase } from "../redux/actions/order";
