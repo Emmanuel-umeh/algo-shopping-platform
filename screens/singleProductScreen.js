@@ -54,7 +54,7 @@ class Product extends Component {
       <View style={styles.container}>
 
           {
-              this.state.loading &&   <ActivityIndicator size="large" color="#00ff00" />
+              this.state.loading &&   <ActivityIndicator size="large" color="crimson" />
           }
         <Image
           style={styles.image}
