@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Text, View, StyleSheet, TextInput, TouchableOpacity} from 'react-native'
 import {recover} from "../redux/actions/auth"
-export default class Recover extends Component {
+ class Recover extends Component {
     state = {
         mnemonic : "",
         loading : false 
@@ -79,6 +79,17 @@ export default class Recover extends Component {
         )
     }
 }
+
+
+
+const mapStateToProps = (state) => ({
+    auth: state.auth,
+  
+  });
+  
+  // export default ProjectForm
+  export default connect(mapStateToProps, { recover })(Recover);
+
 
 
 const styles =  StyleSheet.create({
