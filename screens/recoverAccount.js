@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, StyleSheet, TextInput } from 'react-native'
+import { Text, View, StyleSheet, TextInput , TouchableOpacity} from 'react-native'
 
 export default class Recover extends Component {
     render() {
