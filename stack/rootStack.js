@@ -25,7 +25,15 @@ const RootStack = ({ navigation }) => (
           color: "white",
           alignSelf: "center",
         },
+        headerRight: () => (
+          <Button
+            onPress={() => alert('This is a button!')}
+            title="Info"
+            color="#fff"
+          />
+        ),
       }}
+      
     />
     <Stack.Screen name="Product" component={Product} />
   </Stack.Navigator>
