@@ -116,13 +116,3 @@ const mapStateToProps = (state) => ({
   
   // export default ProjectForm
   export default connect(mapStateToProps, { login })(Login);
-  
-  const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: "#fff",
-      alignItems: "center",
-      justifyContent: "center",
-    },
-  });
-  
