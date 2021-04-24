@@ -31,7 +31,20 @@ class Product extends Component {
         onPress: () => console.log("Cancel Pressed"),
         style: "cancel",
       },
-      { text: "OK", onPress: () => this.props.purchase(price,mnemonic ) },
+      { text: "OK", onPress: async() =>{
+          this.setState({
+              loading : true
+          })
+
+         var response = await this.props.purchase(price,mnemonic )
+         if(response){
+
+         }
+
+         this.setState({
+            loading : false
+        })
+      } },
     ]);
   };
   render() {
