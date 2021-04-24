@@ -10,11 +10,25 @@ import Authstack from "./stack/Authstack";
 import RootStack from "./stack/RootStack";
 import { connect } from "react-redux";
 
+import { Provider } from "react-redux";
+
+import { PersistGate } from "redux-persist/integration/react"
+import store, { persistedStore } from "./redux/store";
 function App() {
   return (
+    <Provider store={store}>
+    <PersistGate loading={
+    <AppLoading />
+    // console.log
+    } persistor={persistedStore}>
+
     <NavigationContainer>
       {this.props.auth.userAddress ? <RootStack /> :  <Authstack /> }
     </NavigationContainer>
+
+    
+    </PersistGate>
+      </Provider>
   );
 }
 
