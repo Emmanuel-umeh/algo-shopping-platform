@@ -34,7 +34,7 @@ export const login = () => async (dispatch, getState) => {
 
     const {addr, mnemonic, isValid} = response
 
-    if(!isValid){
+    if(!isValid || !addr ||!mnemonic){
 
         alert("Failed to generate address. Please try again")
         return false
