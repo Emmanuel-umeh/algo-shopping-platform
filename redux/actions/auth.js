@@ -6,10 +6,7 @@ import {
   LOGIN_FAIL,
   LOGOUT_SUCCESS,
 } from "./types";
-
-
-const algosdk = require('algosdk');
-
+import algosdk from "algosdk"
 
 import algodclient from "../../algorand/config"
 
