@@ -89,6 +89,8 @@ export const recover = (mnemonic) => async (dispatch, getState) => {
         mnemonic: mnemonic,
         // recentOrders
       });
+
+      return true
   
   
   
@@ -98,6 +100,9 @@ export const recover = (mnemonic) => async (dispatch, getState) => {
       dispatch({
           type : LOGIN_FAIL
       })
+      
+      alert("Failed to recover address.")
+      return false
     }
   };
   
