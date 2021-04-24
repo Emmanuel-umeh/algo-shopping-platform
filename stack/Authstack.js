@@ -11,7 +11,7 @@ const Authstack = createStackNavigator();
 
 
 
-const RootStackScreen = ({navigation}) => (
+const Authstack = ({navigation}) => (
     <Authstack.Navigator>
         {/* <RootStack.Screen name="SplashScreen" component={SplashScreen}/> */}
          <Authstack.Screen name="login" component={Login}/>
