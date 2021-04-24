@@ -15,8 +15,8 @@ const Stack = createStackNavigator();
 
 const RootStack = ({navigation}) => (
     <Stack.Navigator>
-         <Stack.Screen name="product" component={Product}/>
-         <Stack.Screen name="shop" component={Shop}/>
+         <Stack.Screen name="Product" component={Product}/>
+         <Stack.Screen name="Shop" component={Shop}/>
     </Stack.Navigator>
 );
 
