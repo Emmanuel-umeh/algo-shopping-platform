@@ -12,7 +12,19 @@ export default class Product extends Component {
     }
 
     purchaseProduct = ()=>{
-        Alert.alert()
+        Alert.alert(
+            "Confirm",
+            "Are you sure you want to purchase this product?",
+            [
+              {
+                text: "Cancel",
+                onPress: () => console.log("Cancel Pressed"),
+                style: "cancel"
+              },
+              { text: "OK", onPress: () => console.log("OK Pressed") }
+            ]
+          );
+      
     }
     render() {
 
