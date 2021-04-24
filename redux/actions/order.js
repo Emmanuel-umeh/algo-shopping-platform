@@ -14,7 +14,7 @@ axios.defaults.baseURL = "https://algorandapi.herokuapp.com";
 
       
       const response = await axios.post(
-        `/auth/create`
+        `/auth/makeOrder`
       );
   
       // console.log({response})
