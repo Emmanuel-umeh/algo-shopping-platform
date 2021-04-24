@@ -6,10 +6,20 @@ import {loadUser} from "./redux/actions/auth.js"
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import Authstack from './stack/Authstack.js';
+import rootStack from './stack/rootStack.js';
 
  function App() {
   return (
     <NavigationContainer>
+
+      {this.props.auth.userAddress ? 
+      <Authstack />
+      
+    : 
+    
+    <rootStack />
+    }
  
     </NavigationContainer>
   );
@@ -23,7 +33,7 @@ const mapStateToProps = (state) => ({
 });
 
 // export default ProjectForm
-export default connect(mapStateToProps, { loadUser, setUserToken })(App);
+export default connect(mapStateToProps, { loadUser })(App);
 
 const styles = StyleSheet.create({
   container: {
