@@ -37,23 +37,24 @@ export const login = () => async (dispatch, getState) => {
     // console.log("in the other");
     // console.log("creating account", algodclient)
 
-    const acct = await Algo.createNewAccount();
+    const acct =await algosdk.generateAccount();
+    console.log({acct})
 
-    var userAddress = acct.addr;
-    console.log({ userAddress });
-    var mnemonic = Algo.secretKeyToMnemonic(acct.sk);
+    // var userAddress = acct.addr;
+    // console.log({ userAddress });
+    // var mnemonic = algosdk.secretKeyToMnemonic(acct.sk);
 
     // var recoveredAccount1 = algosdk.mnemonicToSecretKey(account1_mnemonic);
     // var isValid = algosdk.isValidAddress(acct.addr);
     // console.log("Is this a valid address: " + isValid);
     // console.log("Account created. Save off Mnemonic and address");
 
-    dispatch({
-      type: LOGIN_SUCCESS,
-      userAddress: userAddress,
-      mnemonic: mnemonic,
-      // recentOrders
-    });
+    // dispatch({
+    //   type: LOGIN_SUCCESS,
+    //   userAddress: userAddress,
+    //   mnemonic: mnemonic,
+    //   // recentOrders
+    // });
   } catch (error) {
     console.log({ error });
 
