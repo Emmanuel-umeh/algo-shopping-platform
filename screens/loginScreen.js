@@ -72,7 +72,7 @@ const styles =  StyleSheet.create({
         color:"white"
       },
       forgot:{
-        color:"white",
+        color:"black",
         fontSize:11,
         marginTop : 20
       },
