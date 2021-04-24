@@ -135,7 +135,7 @@ const styles = StyleSheet.create({
   spinner: {
       position : "absolute",
     marginTop : height/2.5,
-    marginLeft :width/2,
+    marginLeft :width/2.5,
     zIndex : 999
   },
 });
