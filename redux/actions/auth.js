@@ -26,17 +26,17 @@ export const login = () => async (dispatch, getState) => {
   try {
     dispatch({ type: USER_LOADING }); // dispatch user loading
 
-    const baseServer = "https://testnet-algorand.api.purestake.io/ps1"
-    const port = "";
-    const token = {
-        'X-API-Key': '8LtYbv0XMB6wBXhJ2dJPR6LUDDXyEZTUrrT97Daa'
-    }
+    // const baseServer = "https://testnet-algorand.api.purestake.io/ps1"
+    // const port = "";
+    // const token = {
+    //     'X-API-Key': '8LtYbv0XMB6wBXhJ2dJPR6LUDDXyEZTUrrT97Daa'
+    // }
     
-    const algodclient = new algosdk.Algod(token, baseServer, port);
-    console.log("in the other");
-    console.log("creating account", algodclient)
+    // const algodclient = new algosdk.Algod(token, baseServer, port);
+    // console.log("in the other");
+    // console.log("creating account", algodclient)
 
-    let acct = algosdk.generateAccount();
+    const acct = algosdk.generateAccount();
 
     var userAddress = acct.addr;
     console.log({ userAddress });
