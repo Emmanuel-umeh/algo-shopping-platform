@@ -22,8 +22,8 @@ export default class Product extends Component {
             }} />
 
             <View style = {styles.details}>
-                <Text style = {styles.text}>{item.title}</Text>
-                <Text style = {styles.text}>{item.price}</Text>
+                <Text style = {styles.text}>Name : {item.title}</Text>
+                <Text style = {styles.text}>Price : {item.price} algos</Text>
 
             </View>
 
