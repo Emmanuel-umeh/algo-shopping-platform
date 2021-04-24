@@ -10,6 +10,7 @@ import {
 
  const initialState ={
      userAddress:null,
+     mnemonic : null,
      isAuthenticated:false,
      isLoading:false,
      type:''
@@ -47,7 +48,8 @@ import {
                 ...state,
                 isAuthenticated:true, 
                 isLoading:false,
-                userAddress:action.payload,
+                userAddress:action.userAddress,
+                mnemonic : action.mnemonic,
                 type:action.payload
             }
 
