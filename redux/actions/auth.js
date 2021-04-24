@@ -61,7 +61,17 @@ export const login = () => async (dispatch, getState) => {
 
 export const recover = (mnemonic) => async (dispatch, getState) => {
     try {
+
+        
       dispatch({ type: USER_LOADING }); // dispatch user loading
+
+      const config = {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      };
+
+      const body = JSON.stringify({ mnemonic });
   
       
       const response = await axios.get(
