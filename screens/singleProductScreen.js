@@ -131,10 +131,7 @@ const styles = StyleSheet.create({
     color: "white",
   },
   spinner: {
-    flex: 1,
-    position: "absolute",
-    alignContent: "center",
-    justifyContent: "center",
+    marginTop : "45%",
     zIndex : 999
   },
 });
