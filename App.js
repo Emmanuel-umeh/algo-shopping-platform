@@ -29,8 +29,7 @@ function App(props) {
 
 const mapStateToProps = (state) => ({
   auth: state.auth,
-  error: state.error,
-  order: state.order,
+
 });
 
 // export default ProjectForm
