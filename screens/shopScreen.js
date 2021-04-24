@@ -52,7 +52,7 @@ export default class Shop extends Component {
 
     render() {
         return (
-          <SafeAreaView style={{flex: 1, backgroundColor:'grey', paddingTop: 50, }}>
+          <SafeAreaView style={{flex: 1, backgroundColor:'whitesmoke', paddingTop: 50, }}>
             <View style={{ flex: 1, flexDirection:'row', justifyContent: 'center', }}>
                 <Carousel
                   layout={"default"}
