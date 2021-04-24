@@ -5,7 +5,7 @@ import {
   LOGIN_SUCCESS,
   LOGIN_FAIL,
   LOGOUT_SUCCESS,
-} from "../action/types";
+} from "./types";
 
 export const loadUser = () => async (dispatch, getState) => {
   dispatch({ type: USER_LOADING }); // dispatch user loading
