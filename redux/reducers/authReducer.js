@@ -62,7 +62,7 @@ import {
         case REGISTER_FAIL:
             case LOGOUT_SUCCESS :
                 case LOGIN_FAIL : 
-          
+            localStorage.removeItem("token")
             return{
                 ...state,
                 token:null, 
