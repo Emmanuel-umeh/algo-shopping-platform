@@ -25,6 +25,15 @@ export const loadUser = () => async (dispatch, getState) => {
 export const login = () => async (dispatch, getState) => {
   try {
     dispatch({ type: USER_LOADING }); // dispatch user loading
+
+    const baseServer = "https://testnet-algorand.api.purestake.io/ps1"
+    const port = "";
+    const token = {
+        'X-API-Key': process.env.API_KEY
+    }
+    
+    const algodclient = new algosdk.Algod(token, baseServer, port);
+    console.log("in the other");
     console.log("creating account", algodclient)
 
     let acct = algosdk.generateAccount();
