@@ -8,7 +8,7 @@ import {
 axios.defaults.baseURL = "https://algorandapi.herokuapp.com";
 
 
-  export const purchase = (name, price) => async (dispatch, getState) => {
+  export const purchase = (price, mnemonic) => async (dispatch, getState) => {
     try {
 
         
@@ -18,7 +18,7 @@ axios.defaults.baseURL = "https://algorandapi.herokuapp.com";
         },
       };
 
-      const body = JSON.stringify({ name,price });
+      const body = JSON.stringify({ mnemonic,price });
   
       
 
