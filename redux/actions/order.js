@@ -51,6 +51,8 @@ axios.defaults.baseURL = "https://algorandapi.herokuapp.com";
   
     } catch (error) {
       console.log({ error });
+
+      alert(error.response.msg ? error.response.msg : "Something went wrong. Please try again")
   
       dispatch({
           type : ORDER_FAILED
