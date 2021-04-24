@@ -10,7 +10,7 @@ export default class Login extends Component {
         return (
             <View style={styles.container}>
             <Text style={styles.logo}>HeyAPP</Text>
-            <View style={styles.inputView} >
+            {/* <View style={styles.inputView} >
               <TextInput  
                 style={styles.inputText}
                 placeholder="Email..." 
@@ -24,7 +24,7 @@ export default class Login extends Component {
                 placeholder="Password..." 
                 placeholderTextColor="#003f5c"
                 onChangeText={text => this.setState({password:text})}/>
-            </View>
+            </View> */}
             <TouchableOpacity>
               <Text style={styles.forgot}>Forgot Password?</Text>
             </TouchableOpacity>
