@@ -9,11 +9,9 @@ import {
  import axios from "axios"
 
  const initialState ={
-     userAddress:localStorage.getItem("token"),
-     isAuthenticated:null,
+     userAddress:null,
+     isAuthenticated:false,
      isLoading:false,
-     user:[],
-     profile:[],
      type:''
  }
 
