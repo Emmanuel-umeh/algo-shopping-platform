@@ -27,10 +27,12 @@ export const login = () => async (dispatch, getState) => {
 
     dispatch({ type: USER_LOADING }); // dispatch user loading
     let userAddress = '0000'
+    let mnemonic = ""
 
     dispatch({
        type: USER_LOADED,
-        payload: userAddress,
+       userAddress: userAddress,
+        mnemonic :mnemonic
         // recentOrders
       }); 
 
