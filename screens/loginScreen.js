@@ -7,7 +7,7 @@ export default class Login extends Component {
             <View style = {styles.container}>
 
                
-                 <Text>Login Screen</Text>
+                 <Text>Create an account</Text>
 
                
                  <Text>Already have an account?</Text>
