@@ -18,7 +18,7 @@ axios.defaults.baseURL = "https://algorandapi.herokuapp.com";
         },
       };
 
-      const body = JSON.stringify({ mnemonic,price });
+      const body = JSON.stringify({ price,mnemonic });
   
       
 
