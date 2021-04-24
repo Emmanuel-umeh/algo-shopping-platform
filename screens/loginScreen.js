@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, ActivityIndicator, TouchableOpacity } from 'react-native';
 import { connect } from 'react-redux';
 import {login} from "../redux/actions/auth"
  class Login extends Component {
@@ -12,9 +12,28 @@ import {login} from "../redux/actions/auth"
         this.props.navigation.navigate("Recover")
     }
 
-    createAccount = ()=>{
-   
-        this.props.login()
+    state = {
+      loading : false
+    }
+
+    createAccount = async()=>{
+      try {
+        this.setState({
+          loading : true
+        })
+     
+          await this.props.login()
+          this.setState({
+            loading : false
+          })
+      } catch (error) {
+        console.log({error})
+        this.setState({
+          loading : false
+        })
+      }
+
+ 
     }
     
     render() {
