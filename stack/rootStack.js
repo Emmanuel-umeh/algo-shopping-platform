@@ -10,7 +10,7 @@ import { Ionicons } from '@expo/vector-icons';
 import {logout} from "../redux/actions/auth"
 const Stack = createStackNavigator();
 
-const RootStack = ({ navigation }) => (
+const RootStack = ({ props }) => (
   <Stack.Navigator
     screenOptions={{
       headerStyle: {
@@ -38,7 +38,7 @@ const RootStack = ({ navigation }) => (
               {
                 text: "OK",
                 onPress: async () => {
-                  this.props.logout
+                  props.logout()
                 },
               },
             ]);
