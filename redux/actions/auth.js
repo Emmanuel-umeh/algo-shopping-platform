@@ -44,3 +44,12 @@ export const login = () => async (dispatch, getState) => {
     console.log({ error });
   }
 };
+
+
+
+export const logout = () => async (dispatch, getState) => {
+
+    dispatch({
+        type : LOGOUT_SUCCESS
+    })
+}
