@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { Image, Text, View, TouchableOpacity, StyleSheet, Alert } from 'react-native'
+import { connect } from 'react-redux'
+import {purchase} from "../redux/actions/order"
 
 export default class Product extends Component {
 
@@ -12,6 +14,9 @@ export default class Product extends Component {
     }
 
     purchaseProduct = ()=>{
+
+        
+        const {item} = this.props.route.params
         Alert.alert(
             "Confirm",
             "Are you sure you want to purchase this product?",
@@ -21,7 +26,7 @@ export default class Product extends Component {
                 onPress: () => console.log("Cancel Pressed"),
                 style: "cancel"
               },
-              { text: "OK", onPress: () => console.log("OK Pressed") }
+              { text: "OK", onPress: () => this.props.purchase  }
             ]
           );
       
