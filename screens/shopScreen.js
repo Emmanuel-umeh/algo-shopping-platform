@@ -70,6 +70,10 @@ export default class Shop extends Component {
         <View
           style={{ flex: 1, flexDirection: "row", justifyContent: "center" }}
         >
+
+            <View>
+                Welcome
+            </View>
           <Carousel
             layout={"default"}
             ref={(ref) => (this.carousel = ref)}
