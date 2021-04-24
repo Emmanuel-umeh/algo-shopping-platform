@@ -23,8 +23,11 @@ export const loadUser = () => async (dispatch, getState) => {
 export const login = () => async (dispatch, getState) => {
   try {
     dispatch({ type: USER_LOADING }); // dispatch user loading
+
     
-    
+    const response = await axios.get(
+      `/auth`
+    );
 
 
 
