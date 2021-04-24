@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Text, View, StyleSheet, Image, SafeAreaView } from "react-native";
+import { Text, View, StyleSheet, Image, SafeAreaView, TouchableOpacity } from "react-native";
 import Carousel from "react-native-snap-carousel";
 export default class Shop extends Component {
   constructor(props) {
@@ -52,6 +52,14 @@ export default class Shop extends Component {
         />
         <Text style={{fontSize: 30}}>{item.title}  ${item.price}</Text>
             {/* <Text></Text> */}
+
+            <TouchableOpacity style={styles.loginBtn} onPress = {()=>{
+                //   this.createAccount()
+                alert("clicked")
+              }}>
+              <Text style={styles.loginText} >Purchase</Text>
+            </TouchableOpacity>
+
       </View>
     );
   }
