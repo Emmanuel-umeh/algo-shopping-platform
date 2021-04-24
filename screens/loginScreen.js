@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { StyleSheet, Text, View, ActivityIndicator, TouchableOpacity } from 'react-native';
 import { connect } from 'react-redux';
 import {login} from "../redux/actions/auth"
+const {width,height} = Dimensions.get("window")
  class Login extends Component {
     constructor(props){
         super(props)
@@ -122,7 +123,13 @@ const styles =  StyleSheet.create({
       },
       loginText:{
         color:"white"
-      }
+      },
+      spinner: {
+        position : "absolute",
+      marginTop : height/2.7,
+      marginLeft :width/2.7,
+      zIndex : 999
+    }
 })
 
 
