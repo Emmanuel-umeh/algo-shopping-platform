@@ -14,11 +14,11 @@ import { Provider } from "react-redux";
 
 import { PersistGate } from "redux-persist/integration/react"
 import store, { persistedStore } from "./redux/store";
-function App() {
+function App(this.props.) {
   return (
   
     <NavigationContainer>
-      {this.props.auth.userAddress ? <RootStack /> :  <Authstack /> }
+      {props.auth.userAddress ? <RootStack /> :  <Authstack /> }
     </NavigationContainer>
 
 
