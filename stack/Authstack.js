@@ -4,7 +4,7 @@
 import React from 'react';
 import { connect } from "react-redux";
 import { createStackNavigator } from '@react-navigation/stack';
-import Login from '../screens/Login';
+import Login from '../screens/loginScreen';
 
 
 const Authstack = createStackNavigator();
