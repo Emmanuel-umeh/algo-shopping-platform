@@ -10,7 +10,7 @@ export default class Login extends Component {
                  <Text>Login Screen</Text>
 
                
-                 <Text>Login Screen</Text>
+                 <Text>Already have an account?</Text>
 
                  <Button title = "Recover Account"> 
 
