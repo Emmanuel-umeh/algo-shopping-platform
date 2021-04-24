@@ -18,8 +18,9 @@ function App() {
   return (
     <Provider store={store}>
     <PersistGate loading={
-    <AppLoading />
+    // <AppLoading />
     // console.log
+    null
     } persistor={persistedStore}>
 
     <NavigationContainer>
