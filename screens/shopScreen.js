@@ -50,8 +50,8 @@ export default class Shop extends Component {
             uri: item.image,
           }}
         />
-        <Text style={{fontSize: 30}}>{item.title}</Text>
-            <Text>${item.price}</Text>
+        <Text style={{fontSize: 30}}>{item.title}  ${item.price}</Text>
+            <Text></Text>
       </View>
     );
   }
