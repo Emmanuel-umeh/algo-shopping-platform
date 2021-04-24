@@ -11,15 +11,13 @@ const Authstack = createStackNavigator();
 
 
 const RootStackScreen = ({navigation}) => (
-    <Authstack.Navigator   screenOptions={{
-        headerShown: false
-      }}>
+    <Authstack.Navigator>
         {/* <RootStack.Screen name="SplashScreen" component={SplashScreen}/> */}
-         <RootStack.Screen name="getStarted" component={getStarted}/>
+         <Authstack.Screen name="getStarted" component={getStarted}/>
         
         {/* <RootStack.Screen   name="mapDestination" component={MapDestination}/> */}
 
 
 
-    </RootStack.Navigator>
+    </Authstack.Navigator>
 );
