@@ -28,7 +28,7 @@ const RootStack = ({ navigation }) => (
         headerRight: () => (
           <Button
             onPress={() => alert('This is a button!')}
-            title="Info"
+            title="Logout"
             color="#fff"
           />
         ),
