@@ -9,7 +9,7 @@ export default class Login extends Component {
     render() {
         return (
             <View style={styles.container}>
-            <Text style={styles.logo}>HeyAPP</Text>
+            <Text style={styles.logo}>Fashion Store</Text>
             {/* <View style={styles.inputView} >
               <TextInput  
                 style={styles.inputText}
