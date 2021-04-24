@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
   },
 
   image : {
-      height : "90%",
+      height :200,
       width : "100%"
   },
   container: {
