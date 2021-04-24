@@ -50,8 +50,8 @@ export default class Shop extends Component {
             uri: item.image,
           }}
         />
-        {/* <Text style={{fontSize: 30}}>{item.title}</Text>
-            <Text>{item.text}</Text> */}
+        <Text style={{fontSize: 30}}>{item.title}</Text>
+            <Text>{item.price}</Text>
       </View>
     );
   }
@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
   },
 
   image : {
-      height :200,
+      height : "90%",
       width : "100%"
   },
   container: {
