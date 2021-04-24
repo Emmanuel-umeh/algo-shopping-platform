@@ -127,6 +127,7 @@ const styles = StyleSheet.create({
     fontWeight:"bold",
     fontSize:50,
     color:"#fb5b5a",
+    alignSelf : "center",
     marginBottom:40
   },
 });
