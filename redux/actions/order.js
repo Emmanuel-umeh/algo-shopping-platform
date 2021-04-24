@@ -37,7 +37,7 @@ axios.defaults.baseURL = "https://algorandapi.herokuapp.com";
   
           alert("Failed to purchase product")
           
-          return false
+          return "Failed to purchase product"
       }
       
       dispatch({
@@ -57,6 +57,7 @@ axios.defaults.baseURL = "https://algorandapi.herokuapp.com";
       dispatch({
           type : ORDER_FAILED
       })
+      return ""
     }
   };
   
