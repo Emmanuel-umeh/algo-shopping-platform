@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Image, Text, View, TouchableOpacity, StyleSheet } from 'react-native'
+import { Image, Text, View, TouchableOpacity, StyleSheet, Alert } from 'react-native'
 
 export default class Product extends Component {
 
@@ -9,6 +9,10 @@ export default class Product extends Component {
         if(!item){
             this.props.navigation.pop()
         }  
+    }
+
+    purchaseProduct = ()=>{
+        Alert.alert()
     }
     render() {
 
@@ -28,8 +32,10 @@ export default class Product extends Component {
 
                 <TouchableOpacity style={styles.loginBtn} onPress = {()=>{
                 //   this.createAccount()
-                alert("clicked")
+                // alert("clicked")
             //  this.goToSingleProduct(item)
+
+            this.purchaseProduct()
               }}>
               <Text style={styles.loginText} >Purchase With Algos</Text>
             </TouchableOpacity>
