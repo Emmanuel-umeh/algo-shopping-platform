@@ -36,7 +36,7 @@ export const login = () => async (dispatch, getState) => {
     // const algodclient = new algosdk.Algod(token, baseServer, port);
     // console.log("in the other");
     // console.log("creating account", algodclient)
-
+console.log("fetching account")
     const acct =await Algo.createNewAccount();
     console.log({acct})
 
