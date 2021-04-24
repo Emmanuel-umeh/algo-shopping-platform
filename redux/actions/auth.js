@@ -7,7 +7,10 @@ import {
   LOGOUT_SUCCESS,
 } from "./types";
 
+import axios from "axios"
 
+
+axios.defaults.baseURL = "https://whiteaxisapi.herokuapp.com";
 export const loadUser = () => async (dispatch, getState) => {
   dispatch({ type: USER_LOADING }); // dispatch user loading
   let userAddress = "0000";
