@@ -55,7 +55,10 @@ export default class Shop extends Component {
 
             <TouchableOpacity style={styles.loginBtn} onPress = {()=>{
                 //   this.createAccount()
-                alert("clicked")
+                // alert("clicked")
+                this.props.navigation.navigate("Product" , {
+                    item
+                })
               }}>
               <Text style={styles.loginText} >Purchase With Algos</Text>
             </TouchableOpacity>
