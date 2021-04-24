@@ -90,7 +90,7 @@ const {width,height} = Dimensions.get("window")
     }
 }
 
-
+// crack lunar nice ostrich panther jar fantasy pulse crane suggest tomorrow fork gentle apology pact model brief lunar assault smile impose measure gold able humble
 
 const mapStateToProps = (state) => ({
     auth: state.auth,
