@@ -24,7 +24,7 @@ export default class Shop extends Component {
           },
           {
               title:"Item 3",
-              image: "image 3",
+              image: "https://images.pexels.com/photos/5556663/pexels-photo-5556663.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
               price : 5000
           },
           {
