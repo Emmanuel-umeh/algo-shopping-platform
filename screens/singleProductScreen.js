@@ -44,5 +44,8 @@ const styles =StyleSheet.create({
     },
     text : {
         fontSize : 30
+    },
+    details : {
+        alignContent : "center"
     }
 })
