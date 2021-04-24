@@ -14,7 +14,7 @@ export const purchase = (price, mnemonic) => async (dispatch, getState) => {
 
     const body = JSON.stringify({ price, mnemonic });
 
-    const response = await axios.post(`/auth/purchase`, body, config);
+    const response = await axios.post(`/purchase`, body, config);
 
     // console.log({response})
     const { success } = response.data;
