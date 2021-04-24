@@ -1,35 +1,26 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
 
-import {loadUser} from "./redux/actions/auth.js"
+import { loadUser } from "./redux/actions/auth.js";
 
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import Authstack from './stack/Authstack.js';
-import RootStack from './stack/RootStack.js';
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+import Authstack from "./stack/Authstack";
+import RootStack from "./stack/RootStack";
 
- function App() {
+function App() {
   return (
     <NavigationContainer>
-
-      {this.props.auth.userAddress ? 
-      <Authstack />
-      
-    : 
-    
- <RootStack />
-    }
- 
+      {this.props.auth.userAddress ? <Authstack /> : <RootStack />}
     </NavigationContainer>
   );
 }
 
-
 const mapStateToProps = (state) => ({
   auth: state.auth,
   error: state.error,
-  order: state.order
+  order: state.order,
 });
 
 // export default ProjectForm
@@ -38,8 +29,8 @@ export default connect(mapStateToProps, { loadUser })(App);
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
