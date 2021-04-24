@@ -27,7 +27,7 @@ const RootStack = ({ navigation }) => (
           alignSelf: "center",
         },
         headerRight: () => (
-          <Ionicons name="log-out" size={32} color="green" />
+          <Ionicons name="power" size={32} color="white" />
         ),
       }}
       
