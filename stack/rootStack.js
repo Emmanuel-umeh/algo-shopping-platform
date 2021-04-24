@@ -7,18 +7,18 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Login from '../screens/Login';
 
 
-const Authstack = createStackNavigator();
+const RootStack = createStackNavigator();
 
 
 
 const RootStackScreen = ({navigation}) => (
-    <Authstack.Navigator>
+    <RootStack.Navigator>
         {/* <RootStack.Screen name="SplashScreen" component={SplashScreen}/> */}
-         <Authstack.Screen name="login" component={Login}/>
+         <RootStack.Screen name="shop" component={Login}/>
         
         {/* <RootStack.Screen   name="mapDestination" component={MapDestination}/> */}
 
 
 
-    </Authstack.Navigator>
+    </RootStack.Navigator>
 );
