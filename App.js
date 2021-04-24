@@ -3,9 +3,7 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
 import { loadUser } from "./redux/actions/auth.js";
-import { Provider } from "react-redux";
 
-import { PersistGate } from "redux-persist/integration/react"
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import Authstack from "./stack/Authstack";
