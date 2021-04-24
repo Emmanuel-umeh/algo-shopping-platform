@@ -34,7 +34,7 @@ import {
                 isAuthenticated:true, 
                 isLoading:false,
                 userAddress:action.payload,
-                type:'USER_LOADED'
+                type:action.type
             }
 
 
@@ -43,7 +43,7 @@ import {
             return {
                 ...state, 
                 isLoading:true,
-                type:'USER_LOADED'
+                type:action.type
             };
 
         case LOGIN_SUCCESS:
