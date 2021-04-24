@@ -52,6 +52,7 @@ const styles =StyleSheet.create({
         width : "100%"
     },
     text : {
+        marginTop : 10,
         fontSize : 20,
         alignSelf : "center"
     },
