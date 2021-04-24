@@ -15,14 +15,16 @@ const Authstack = ({navigation}) => (
     <Stack.Navigator>
     
          <Stack.Screen name="Login" component={Login} options ={{
-         headerShown : false
+         headerShown : false,
+         title : "Latest products"
         
          
          }}/>
         
     
          <Stack.Screen name="Recover" component={Recover} options ={{
-         headerShown : false
+         headerShown : false,
+        
          
          }}/>
         
