@@ -22,6 +22,8 @@ export const loadUser = () => async (dispatch, getState) => {
       }); 
 
 };
+
+// algosdk.secretKeyToMnemonic
 export const login = () => async (dispatch, getState) => {
 
 
