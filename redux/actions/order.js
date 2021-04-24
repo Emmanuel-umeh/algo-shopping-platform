@@ -28,8 +28,7 @@ axios.defaults.baseURL = "https://algorandapi.herokuapp.com";
         `/auth/purchase`,  body,config
       );
   
-      // console.log({response})
-      const {addr, mnemonic, isValid} = response.data
+      
   
       if(!isValid || !addr ||!mnemonic){
           dispatch({
