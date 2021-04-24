@@ -6,8 +6,11 @@ export default class Login extends Component {
         return (
             <View style = {styles.container}>
 
-                <Text>Login Screen</Text>
-                
+               
+                 <Text>Login Screen</Text>
+
+               
+                 <Text>Login Screen</Text>
             </View>
         )
     }
