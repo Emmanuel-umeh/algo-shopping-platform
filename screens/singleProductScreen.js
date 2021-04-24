@@ -134,8 +134,8 @@ const styles = StyleSheet.create({
   },
   spinner: {
       position : "absolute",
-    marginTop : height/2.5,
-    marginLeft :width/2.5,
+    marginTop : height/2.7,
+    marginLeft :width/2.7,
     zIndex : 999
   },
 });
