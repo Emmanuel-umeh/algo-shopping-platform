@@ -13,6 +13,7 @@ import {login} from "../redux/actions/auth"
     }
 
     createAccount = ()=>{
+        console.log("creatinmg acoutn")
         this.props.login()
     }
     
