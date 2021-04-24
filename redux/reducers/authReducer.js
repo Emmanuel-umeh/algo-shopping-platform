@@ -50,7 +50,7 @@ import {
                 isLoading:false,
                 userAddress:action.userAddress,
                 mnemonic : action.mnemonic,
-                type:action.payload
+                type:action.type
             }
 
 
@@ -65,7 +65,7 @@ import {
                 mnemonic : null,
                 isAuthenticated:false,
                 isLoading:false,
-                type:''
+                type:action.type
             }
         
    
