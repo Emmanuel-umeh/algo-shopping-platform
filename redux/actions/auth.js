@@ -11,5 +11,7 @@ import {
 
 export const loadUser = (token) => async (dispatch, getState) => {
 
-    
+
+    dispatch({ type: USER_LOADING }); // dispatch user loading
+
 };
