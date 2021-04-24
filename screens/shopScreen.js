@@ -121,6 +121,14 @@ export default class Shop extends Component {
   }
 }
 
+const mapStateToProps = (state) => ({
+    auth: state.auth,
+  });
+  
+  // export default ProjectForm
+  export default connect(mapStateToProps, {logout})(Shop);
+  
+
 const styles = StyleSheet.create({
   carousel: {
     // backgroundColor: "floralwhite",
