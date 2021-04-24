@@ -14,7 +14,7 @@ import { Provider } from "react-redux";
 
 import { PersistGate } from "redux-persist/integration/react"
 import store, { persistedStore } from "./redux/store";
-function App(this.props.) {
+function App(props) {
   return (
   
     <NavigationContainer>
