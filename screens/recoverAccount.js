@@ -29,6 +29,11 @@ export default class Recover extends Component {
         console.log(this.state)
         return (
             <View style={styles.container}>
+                  {this.state.loading && (
+          <View style={styles.spinner}>
+            <ActivityIndicator size="large" color="white" />
+          </View>
+        )}
             <Text style={styles.logo}>Recover</Text>
             {/* 
             <View style={styles.inputView} >
