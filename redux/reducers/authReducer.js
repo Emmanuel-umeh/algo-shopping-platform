@@ -48,9 +48,7 @@ import {
 
         case LOGIN_SUCCESS:
         case REGISTER_SUCCESS:
-            localStorage.setItem("token", action.payload.token)
-            console.log("logged in successfully")
-        
+          
             return{
                 ...state,
                 isAuthenticated:true, 
