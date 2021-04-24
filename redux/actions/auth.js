@@ -32,8 +32,8 @@ export const login = () => async (dispatch, getState) => {
       `/auth/create`
     );
 
-    console.log({response})
-    const {addr, mnemonic, isValid} = response
+    // console.log({response})
+    const {addr, mnemonic, isValid} = response.data
 
     if(!isValid || !addr ||!mnemonic){
         dispatch({
