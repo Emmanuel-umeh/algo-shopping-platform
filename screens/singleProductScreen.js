@@ -55,5 +55,20 @@ const styles =StyleSheet.create({
         fontSize : 20,
         alignSelf : "center"
     },
+    
+  loginBtn:{
+    width:"80%",
+    backgroundColor:"#fb5b5a",
+    borderRadius:25,
+    height:30,
+    alignItems:"center",
+    justifyContent:"center",
+    marginTop:10,
+    marginBottom:10
+  },
+
+  loginText:{
+    color:"white"
+  },
    
 })
