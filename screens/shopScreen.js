@@ -87,7 +87,7 @@ export default class Shop extends Component {
 
 const styles = StyleSheet.create({
   carousel: {
-    backgroundColor: "floralwhite",
+    // backgroundColor: "floralwhite",
     borderRadius: 5,
     height: 250,
     padding: 5,
