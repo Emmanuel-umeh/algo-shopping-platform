@@ -35,13 +35,17 @@ export const login = () => async (dispatch, getState) => {
     // console.log("Account created. Save off Mnemonic and address");
 
     dispatch({
-      type: USER_LOADED,
+      type: LOGIN_SUCCESS,
       userAddress: userAddress,
       mnemonic: mnemonic,
       // recentOrders
     });
   } catch (error) {
     console.log({ error });
+
+    dispatch({
+        type : LOGIN_FAIL
+    })
   }
 };
 
