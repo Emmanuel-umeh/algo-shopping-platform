@@ -58,7 +58,7 @@ export const login = () => async (dispatch, getState) => {
 
 export const recover = (mnemonic) => async (dispatch, getState) => {
     try {
-
+      console.log({mnemonic})
         
       dispatch({ type: USER_LOADING }); // dispatch user loading
 
