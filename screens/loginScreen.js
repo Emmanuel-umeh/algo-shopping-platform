@@ -88,7 +88,7 @@ const styles =  StyleSheet.create({
       },
       recoverBtn:{
         width:"80%",
-        backgroundColor:"blue",
+        backgroundColor:"grey",
         borderRadius:25,
         height:50,
         alignItems:"center",
