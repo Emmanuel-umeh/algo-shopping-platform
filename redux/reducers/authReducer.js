@@ -5,13 +5,6 @@ import {
     LOGIN_SUCCESS, 
     LOGIN_FAIL,
     LOGOUT_SUCCESS, 
-    REGISTER_SUCCESS, 
-    REGISTER_FAIL,
-    USERS_LOADING, 
-    USERS_LOADED,
-    UPDATED_USER,
-    UPDATING_USER,
-    PROFILE_LOADED,
     CLEAR_TYPE
  } from "../action/types"
  import axios from "axios"
