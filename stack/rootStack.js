@@ -30,7 +30,7 @@ const RootStack = ({ navigation }) => (
           <Button
             onPress={() => alert('This is a button!')}
             title="Logout"
-            color="#fff"
+            
           />
         ),
       }}
