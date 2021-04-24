@@ -17,7 +17,8 @@ const RootStack = ({navigation}) => (
     <Stack.Navigator>
          <Stack.Screen name="Shop" component={Shop} options={{
 
-title : "Latest products"
+title : "Latest products",
+headerBackground : "crimson"
          }}/>
          <Stack.Screen name="Product" component={Product}/>
         
