@@ -51,7 +51,7 @@ export default class Shop extends Component {
           }}
         />
         <Text style={{fontSize: 30}}>{item.title}  ${item.price}</Text>
-            <Text></Text>
+            {/* <Text></Text> */}
       </View>
     );
   }
