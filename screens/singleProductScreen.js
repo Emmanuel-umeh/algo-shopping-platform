@@ -65,6 +65,16 @@ export default class Product extends Component {
 }
 
 
+const mapStateToProps = (state) => ({
+    auth: state.auth,
+    order : state.order
+  
+  });
+  
+  // export default ProjectForm
+  export default connect(mapStateToProps, { login })(Login);
+
+
 const styles =StyleSheet.create({
     container : {
         flex : 1,
