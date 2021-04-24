@@ -12,7 +12,7 @@ export default class Login extends Component {
                
                  <Text>Already have an account?</Text>
 
-                 <Button onPress = {this.props.navigation.navigate("Recover")} title = "Recover Account"> 
+                 <Button onPress = {()=>this.props.navigation.navigate("Recover")} title = "Recover Account"> 
 
                  </Button>
             </View>
