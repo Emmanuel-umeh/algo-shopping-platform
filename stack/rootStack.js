@@ -41,4 +41,4 @@ const mapStateToProps = (state) => ({
 });
 
 // export default ProjectForm
-export default connect(mapStateToProps, {logout})(RootStack);
+export default connect(mapStateToProps, null)(RootStack);
