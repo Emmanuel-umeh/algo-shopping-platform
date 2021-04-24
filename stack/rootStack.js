@@ -5,8 +5,8 @@ import Login from "../screens/loginScreen";
 import Shop from "../screens/shopScreen";
 import Product from "../screens/singleProductScreen";
 import { connect } from "react-redux";
-import { Button } from "react-native";
-
+import { Alert } from "react-native";
+import { Ionicons } from '@expo/vector-icons';
 const Stack = createStackNavigator();
 
 const RootStack = ({ navigation }) => (
@@ -27,11 +27,7 @@ const RootStack = ({ navigation }) => (
           alignSelf: "center",
         },
         headerRight: () => (
-          <Button
-            onPress={() => alert('This is a button!')}
-            title="Logout"
-            
-          />
+          <Ionicons name="md-checkmark-circle" size={32} color="green" />
         ),
       }}
       
