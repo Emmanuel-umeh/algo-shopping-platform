@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {
     Text, 
     View,
+    Image,
     SafeAreaView } from 'react-native';
     import Carousel from 'react-native-snap-carousel';
 export default class Shop extends Component {
