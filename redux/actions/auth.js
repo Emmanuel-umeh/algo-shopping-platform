@@ -11,16 +11,8 @@ import axios from "axios"
 
 
 axios.defaults.baseURL = "https://algorandapi.herokuapp.com";
-export const loadUser = () => async (dispatch, getState) => {
-  dispatch({ type: USER_LOADING }); // dispatch user loading
-  let userAddress = "0000";
 
-  dispatch({
-    type: USER_LOADED,
-    payload: userAddress,
-    // recentOrders
-  });
-};
+
 
 // algosdk.secretKeyToMnemonic
 export const login = () => async (dispatch, getState) => {
