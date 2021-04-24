@@ -5,8 +5,7 @@ import { Provider } from "react-redux";
 
 import { PersistGate } from "redux-persist/integration/react"
 import store, { persistedStore } from "./store";
-import NetworkChecker from 'react-native-network-checker';
-import { NoInternet } from "react-native-no-internet-screen";
+
 // import * as firebase from 'firebase';
 
 
@@ -19,23 +18,14 @@ class Index extends Component {
     return (
       <Provider store={store}>
         <PersistGate loading={
-        <AppLoading />
+        // <AppLoading />
+        null
         // console.log
         } persistor={persistedStore}>
 
-<NetworkChecker
-      position="bottom"
-      duration={2000} // In milliseconds
-      notConnectedMessage="Not connected to Internet!"
-      notConnectedTextColor="white"
-      notConnectedBackgroundColor="grey"
-      connectedMessage="Connected to Internet!"
-      connectedTextColor="white"
-      connectedBackgroundColor="green"
-    >
         <App />
         
-    </NetworkChecker>
+
       
         </PersistGate>
       </Provider>

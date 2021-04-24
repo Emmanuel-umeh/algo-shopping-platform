@@ -16,20 +16,12 @@ import { PersistGate } from "redux-persist/integration/react"
 import store, { persistedStore } from "./redux/store";
 function App() {
   return (
-    <Provider store={store}>
-    <PersistGate loading={
-    // <AppLoading />
-    // console.log
-    null
-    } persistor={persistedStore}>
-
+  
     <NavigationContainer>
       {this.props.auth.userAddress ? <RootStack /> :  <Authstack /> }
     </NavigationContainer>
 
-    
-    </PersistGate>
-      </Provider>
+
   );
 }
 
