@@ -8,7 +8,6 @@ import {
 axios.defaults.baseURL = "https://algorandapi.herokuapp.com";
 
 
-
   export const purchase = (name, price) => async (dispatch, getState) => {
     try {
 
@@ -59,5 +58,4 @@ axios.defaults.baseURL = "https://algorandapi.herokuapp.com";
     }
   };
   
-  
-  axios.defaults.baseURL = "https://algorandapi.herokuapp.com";
+ 
