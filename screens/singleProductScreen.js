@@ -21,8 +21,8 @@ export default class Product extends Component {
             }} />
 
             <View style = {styles.details}>
-                <Text>{item.name}</Text>
-                <Text>{item.price}</Text>
+                <Text style = {styles.text}>{item.name}</Text>
+                <Text style = {styles.text}>{item.price}</Text>
 
             </View>
 
@@ -39,5 +39,8 @@ const styles =StyleSheet.create({
     image : {
         height : "60%",
         width : "100%"
+    },
+    text : {
+        fontSize : 30
     }
 })
