@@ -7,20 +7,20 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Login from '../screens/loginScreen';
 
 
-const Authstack = createStackNavigator();
+const Stack = createStackNavigator();
 
 
 
 const Authstack = ({navigation}) => (
-    <Authstack.Navigator>
+    <Stack.Navigator>
     
-         <Authstack.Screen name="login" component={Login}/>
+         <Stack.Screen name="login" component={Login}/>
         
 
 
 
 
-    </Authstack.Navigator>
+    </Stack.Navigator>
 );
 
 
