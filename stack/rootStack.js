@@ -9,15 +9,15 @@ import Shop from '../screens/shopScreen';
 import Product from '../screens/singleProductScreen';
 import { connect } from 'react-redux';
 
-const RootStack = createStackNavigator();
+const Stack = createStackNavigator();
 
 
 
-const RootStackScreen = ({navigation}) => (
-    <RootStack.Navigator>
-         <RootStack.Screen name="product" component={Product}/>
-         <RootStack.Screen name="shop" component={Shop}/>
-    </RootStack.Navigator>
+const RootStack = ({navigation}) => (
+    <Stack.Navigator>
+         <Stack.Screen name="product" component={Product}/>
+         <Stack.Screen name="shop" component={Shop}/>
+    </Stack.Navigator>
 );
 
 const mapStateToProps = (state) => ({
@@ -25,5 +25,5 @@ const mapStateToProps = (state) => ({
   });
   
   // export default ProjectForm
-  export default connect(mapStateToProps, null)(RootStackScreen);
+  export default connect(mapStateToProps, null)(RootStack);
   
