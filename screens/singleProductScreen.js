@@ -20,6 +20,10 @@ class Product extends Component {
     }
   }
 
+  state = {
+      loading : false
+  }
+
   purchaseProduct = () => {
     const { item } = this.props.route.params;
     const {mnemonic} = this.props.auth
