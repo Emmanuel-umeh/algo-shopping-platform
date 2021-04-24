@@ -53,8 +53,8 @@ import {
                 ...state,
                 isAuthenticated:true, 
                 isLoading:false,
-                user:action.payload,
-                type:'LOGIN_SUCCESS'
+                userAddress:action.payload,
+                type:action.payload
             }
 
 
