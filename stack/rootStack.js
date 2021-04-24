@@ -23,7 +23,8 @@ const RootStack = ({navigation}) => (
 
 title : "Latest products",
 headerTitleStyle : {
-    color : "white"
+    color : "white",
+    alignSelf : "center"
 }
          }}/>
          <Stack.Screen name="Product" component={Product}/>
