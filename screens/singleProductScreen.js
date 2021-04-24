@@ -62,7 +62,7 @@ class Product extends Component {
       <View style={styles.container}>
         {this.state.loading && (
           <View style={styles.spinner}>
-            <ActivityIndicator size="large" color="crimson" />
+            <ActivityIndicator size="large" color="white" />
           </View>
         )}
         <Image
@@ -134,7 +134,7 @@ const styles = StyleSheet.create({
   },
   spinner: {
       position : "absolute",
-    marginTop : height/2.3,
+    marginTop : height/2.5,
     marginLeft :width/2,
     zIndex : 999
   },
