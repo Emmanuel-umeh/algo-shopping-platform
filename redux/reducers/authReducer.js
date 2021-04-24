@@ -5,7 +5,7 @@ import {
     LOGIN_SUCCESS, 
     LOGIN_FAIL,
     LOGOUT_SUCCESS
- } from "../action/types"
+ } from "../actions/types"
  import axios from "axios"
 
  const initialState ={
