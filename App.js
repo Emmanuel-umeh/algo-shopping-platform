@@ -7,7 +7,7 @@ import {loadUser} from "./redux/actions/auth.js"
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Authstack from './stack/Authstack.js';
-import rootStack from './stack/rootStack.js';
+import RootStack from './stack/rootStack.js';
 
  function App() {
   return (
@@ -18,7 +18,7 @@ import rootStack from './stack/rootStack.js';
       
     : 
     
-    <rootStack />
+ <RootStack />
     }
  
     </NavigationContainer>
