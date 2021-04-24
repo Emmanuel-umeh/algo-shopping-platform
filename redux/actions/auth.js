@@ -88,7 +88,7 @@ export const recover = (mnemonic) => async (dispatch, getState) => {
       
       dispatch({
         type: LOGIN_SUCCESS,
-        userAddress: addr,
+        userAddress: address,
         mnemonic: mnemonic,
         // recentOrders
       });
