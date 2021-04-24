@@ -14,7 +14,10 @@ const Stack = createStackNavigator();
 const Authstack = ({navigation}) => (
     <Stack.Navigator>
     
-         <Stack.Screen name="Login" component={Login}/>
+         <Stack.Screen name="Login" component={Login} options ={{
+         headerShown : false
+         
+         }}/>
         
     
          <Stack.Screen name="Recover" component={Recover}/>
