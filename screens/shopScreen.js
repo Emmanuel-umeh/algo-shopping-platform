@@ -67,6 +67,9 @@ export default class Shop extends Component {
   render() {
     return (
       <SafeAreaView style={styles.container}>
+
+<Text style={styles.logo}>Fashion Store</Text>
+         
         <View
           style={{ flex: 1, flexDirection: "row", justifyContent: "center" }}
         >
@@ -119,5 +122,11 @@ const styles = StyleSheet.create({
 
   loginText:{
     color:"white"
-  }
+  },
+  logo:{
+    fontWeight:"bold",
+    fontSize:50,
+    color:"#fb5b5a",
+    marginBottom:40
+  },
 });
