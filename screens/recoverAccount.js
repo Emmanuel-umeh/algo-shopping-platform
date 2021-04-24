@@ -5,6 +5,25 @@ export default class Recover extends Component {
     state = {
         mnemonic : ""
     }
+
+    recover = ()=>{
+
+        try {
+            this.setState({
+                loading : true
+            })
+    
+            this.setState({
+                loading : false
+            })
+        } catch (error) {
+            console.log({error})
+            this.setState({
+                loading : false
+            }) 
+        }
+   
+    }
     render() {
         console.log(this.state)
         return (
@@ -42,9 +61,9 @@ export default class Recover extends Component {
             </View>
             
             <TouchableOpacity style={styles.recoverBtn} 
-            // onPress = {()=>{
-            //     this.recover()
-            // }}
+            onPress = {()=>{
+                this.recover()
+            }}
             > 
               <Text style={styles.loginText}>Recover Account</Text>
             </TouchableOpacity>
