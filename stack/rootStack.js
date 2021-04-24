@@ -14,7 +14,11 @@ const Stack = createStackNavigator();
 
 
 const RootStack = ({navigation}) => (
-    <Stack.Navigator>
+    <Stack.Navigator screenOptions ={{
+        headerStyle :{
+            backgroundColor : "pink"
+        }
+    }}>
          <Stack.Screen name="Shop" component={Shop} options={{
 
 title : "Latest products"
