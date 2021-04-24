@@ -68,7 +68,7 @@ const styles =  StyleSheet.create({
         padding:20
       },
       inputText:{
-        height:0,
+        // height:0,
         color:"white"
       },
       forgot:{
