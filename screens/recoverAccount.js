@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, StyleSheet, TextInput, TouchableOpacity , Dimensions} from 'react-native'
+import { Text, View, StyleSheet, TextInput, TouchableOpacity , Dimensions, ActivityIndicator} from 'react-native'
 import { connect } from 'react-redux'
 import {recover} from "../redux/actions/auth"
 
