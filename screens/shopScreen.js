@@ -44,8 +44,12 @@ export default class Shop extends Component {
               padding: 50,
               marginLeft: 25,
               marginRight: 25, }}>
-            <Text style={{fontSize: 30}}>{item.title}</Text>
-            <Text>{item.text}</Text>
+
+                  <Image source = {{
+                      uri : item.image
+                  }} />
+            {/* <Text style={{fontSize: 30}}>{item.title}</Text>
+            <Text>{item.text}</Text> */}
           </View>
 
         )
