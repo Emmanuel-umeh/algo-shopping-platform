@@ -26,7 +26,6 @@ const Authstack = ({navigation}) => (
 
 const mapStateToProps = (state) => ({
     auth: state.auth,
-    error: state.error,
   });
   
   // export default ProjectForm
