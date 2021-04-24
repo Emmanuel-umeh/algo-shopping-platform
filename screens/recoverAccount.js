@@ -19,7 +19,7 @@ export default class Recover extends Component {
               <Text style={styles.forgot}>Enter Your Mnemonic Key</Text>
             </TouchableOpacity>
      
-            <View style={styles.inputView} >
+            {/* <View style={styles.inputView} > */}
             <TextInput
       style={styles.inputText}
       underlineColorAndroid="transparent"
@@ -28,7 +28,7 @@ export default class Recover extends Component {
       numberOfLines={20}
       multiline={true}
     />
-            </View>
+            {/* </View> */}
             
             <TouchableOpacity style={styles.recoverBtn} 
             // onPress = {()=>{
