@@ -6,10 +6,7 @@ import {
   LOGIN_FAIL,
   LOGOUT_SUCCESS,
 } from "./types";
-import algosdk from "algosdk"
 
-import Algo from "react-native-algo";
-import algodclient from "../../algorand/config"
 
 export const loadUser = () => async (dispatch, getState) => {
   dispatch({ type: USER_LOADING }); // dispatch user loading
@@ -26,35 +23,11 @@ export const loadUser = () => async (dispatch, getState) => {
 export const login = () => async (dispatch, getState) => {
   try {
     dispatch({ type: USER_LOADING }); // dispatch user loading
-
-    // const baseServer = "https://testnet-algorand.api.purestake.io/ps1"
-    // const port = "";
-    // const token = {
-    //     'X-API-Key': '8LtYbv0XMB6wBXhJ2dJPR6LUDDXyEZTUrrT97Daa'
-    // }
     
-    // const algodclient = new algosdk.Algod(token, baseServer, port);
-    // console.log("in the other");
-    // console.log("creating account", algodclient)
+    
 
-    const acct =await algosdk.generateAccount();
-    console.log({acct})
 
-    // var userAddress = acct.addr;
-    // console.log({ userAddress });
-    // var mnemonic = algosdk.secretKeyToMnemonic(acct.sk);
 
-    // var recoveredAccount1 = algosdk.mnemonicToSecretKey(account1_mnemonic);
-    // var isValid = algosdk.isValidAddress(acct.addr);
-    // console.log("Is this a valid address: " + isValid);
-    // console.log("Account created. Save off Mnemonic and address");
-
-    // dispatch({
-    //   type: LOGIN_SUCCESS,
-    //   userAddress: userAddress,
-    //   mnemonic: mnemonic,
-    //   // recentOrders
-    // });
   } catch (error) {
     console.log({ error });
 
