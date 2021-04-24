@@ -11,31 +11,31 @@ export default class Shop extends Component {
           title: "Hoodie",
           image:
             "https://images.pexels.com/photos/6786666/pexels-photo-6786666.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
-          price: 20,
+          price: 2,
         },
         {
           title: "Dress kit",
           image:
             "https://images.pexels.com/photos/914668/pexels-photo-914668.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
-          price: 30,
+          price: 3,
         },
         {
           title: "Classy Dress",
           image:
             "https://images.pexels.com/photos/5556663/pexels-photo-5556663.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
-          price: 40,
+          price: 8,
         },
         {
           title: "Corporate",
           image:
             "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
-          price: 50,
+          price: 3,
         },
         {
           title: "Swag",
           image:
             "https://images.pexels.com/photos/2866077/pexels-photo-2866077.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
-          price: 30,
+          price: 3,
         },
       ],
     };
