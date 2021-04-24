@@ -31,7 +31,7 @@ class Product extends Component {
         onPress: () => console.log("Cancel Pressed"),
         style: "cancel",
       },
-      { text: "OK", onPress: () => this.props.purchase(price, ) },
+      { text: "OK", onPress: () => this.props.purchase(price,mnemonic ) },
     ]);
   };
   render() {
