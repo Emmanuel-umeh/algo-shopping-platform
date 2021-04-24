@@ -74,23 +74,30 @@ export const recover = (mnemonic) => async (dispatch, getState) => {
       const response = await axios.get(
         `/auth/recover`, body, config
       );
-  
-      const {address, mnemonic} = response.data
-  
-      if( !address ||!mnemonic){
-  
-          alert("Failed to recover address.")
-          return false
-      }
-      
-      dispatch({
-        type: LOGIN_SUCCESS,
-        userAddress: address,
-        mnemonic: mnemonic,
-        // recentOrders
-      });
 
-      return true
+      if(response){
+        const {address, mnemonic} = response.data
+  
+        if( !address ||!mnemonic){
+    
+            alert("Failed to recover address.")
+            return false
+        }
+        
+        dispatch({
+          type: LOGIN_SUCCESS,
+          userAddress: address,
+          mnemonic: mnemonic,
+          // recentOrders
+        });
+  
+        return true
+      }else{
+        alert("Failed to recover address.")
+        return false
+      }
+  
+  
   
   
   
