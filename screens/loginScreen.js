@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { StyleSheet, Text, View, ActivityIndicator, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, ActivityIndicator, TouchableOpacity,Dimensions } from 'react-native';
 import { connect } from 'react-redux';
 import {login} from "../redux/actions/auth"
 const {width,height} = Dimensions.get("window")
