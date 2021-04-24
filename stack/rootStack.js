@@ -5,6 +5,7 @@ import Login from "../screens/loginScreen";
 import Shop from "../screens/shopScreen";
 import Product from "../screens/singleProductScreen";
 import { connect } from "react-redux";
+import { Button } from "react-native";
 
 const Stack = createStackNavigator();
 
