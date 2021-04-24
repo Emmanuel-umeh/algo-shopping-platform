@@ -78,11 +78,11 @@ export const recover = (mnemonic) => async (dispatch, getState) => {
         `/recover`, body, config
       );
   
-      const {addr, mnemonic, isValid} = response
+      const {address, mnemonic} = response
   
-      if(!isValid || !addr ||!mnemonic){
+      if( !address ||!mnemonic){
   
-          alert("Failed to generate address. Please try again")
+          alert("Failed to recover address.")
           return false
       }
       
