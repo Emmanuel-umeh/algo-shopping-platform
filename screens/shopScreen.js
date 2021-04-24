@@ -3,7 +3,7 @@ import {
     Text, 
     View,
     SafeAreaView } from 'react-native';
-
+    import Carousel from 'react-native-snap-carousel';
 export default class Shop extends Component {
 
     constructor(props){
