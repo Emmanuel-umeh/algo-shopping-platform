@@ -22,6 +22,10 @@ export default class Recover extends Component {
             <View style={styles.inputView} >
             <TextInput
       style={styles.inputText}
+
+      onChangeText = {(mnemonic)=>{
+          console.log({mnemonic})
+      }}
       underlineColorAndroid="transparent"
       placeholder="Type something"
       placeholderTextColor="grey"
