@@ -15,22 +15,27 @@ export default class Shop extends Component {
           {
               title:"Item 1",
               text: "Text 1",
+              price : 5000
           },
           {
               title:"Item 2",
               text: "Text 2",
+              price : 5000
           },
           {
               title:"Item 3",
               text: "Text 3",
+              price : 5000
           },
           {
               title:"Item 4",
               text: "Text 4",
+              price : 5000
           },
           {
               title:"Item 5",
               text: "Text 5",
+              price : 5000
           },
         ]
       }
