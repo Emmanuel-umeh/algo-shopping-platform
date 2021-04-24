@@ -6,7 +6,6 @@ import {
     LOGIN_FAIL,
     LOGOUT_SUCCESS
  } from "../actions/types"
- import axios from "axios"
 
  const initialState ={
      userAddress:null,
