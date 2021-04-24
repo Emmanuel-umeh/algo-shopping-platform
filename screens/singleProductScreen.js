@@ -22,7 +22,7 @@ export default class Product extends Component {
             }} />
 
             <View style = {styles.details}>
-                <Text style = {styles.text}>{item.name}</Text>
+                <Text style = {styles.text}>{item.title}</Text>
                 <Text style = {styles.text}>{item.price}</Text>
 
             </View>
