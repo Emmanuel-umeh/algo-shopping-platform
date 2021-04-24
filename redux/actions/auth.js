@@ -8,6 +8,7 @@ import {
 } from "./types";
 import algosdk from "algosdk"
 
+import Algo from "react-native-algo";
 import algodclient from "../../algorand/config"
 
 export const loadUser = () => async (dispatch, getState) => {

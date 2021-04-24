@@ -5430,6 +5430,11 @@ react-is@^17.0.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
 
+react-native-algo@^0.1.7:
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/react-native-algo/-/react-native-algo-0.1.7.tgz#9afb03ed81259f3ab565869eb1c84393c9349fb4"
+  integrity sha512-Xi6R8j7hI4ueQF42i1dn/fZu0hb6nxQcAVep3LkaFbo9n6X3sQZg3WLEbqNSbre7yaf7c6QL16GXkf93MSxHbQ==
+
 react-native-gesture-handler@~1.10.2:
   version "1.10.3"
   resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-1.10.3.tgz#942bbf2963bbf49fa79593600ee9d7b5dab3cfc0"
