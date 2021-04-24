@@ -29,6 +29,21 @@ export const login = () => async (dispatch, getState) => {
       `/auth`
     );
 
+    const {addr, mnemonic, isValid} = response
+
+    if(!isValid){
+
+        alert("Failed to generate address. Please try again")
+        return false
+    }
+    
+    dispatch({
+      type: LOGIN_SUCCESS,
+      userAddress: addr,
+      mnemonic: mnemonic,
+      // recentOrders
+    });
+
 
 
   } catch (error) {
