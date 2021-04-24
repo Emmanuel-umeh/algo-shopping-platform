@@ -81,22 +81,10 @@ import {
             return{
                 ...state,
                 isLoading:false,
-                user:action.payload
+                userAddress:action.payload
             }
 
 
-            case UPDATING_USER:
-                return{
-                    ...state,
-                    isLoading:true
-                }
-
-                case UPDATED_USER:
-                    return{
-                        ...state,
-                        isLoading:false,
-                        user:action.payload
-                    }
 
                     case AUTH_ERROR:
                         return{
