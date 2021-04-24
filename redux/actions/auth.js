@@ -37,7 +37,7 @@ export const login = () => async (dispatch, getState) => {
     // console.log("in the other");
     // console.log("creating account", algodclient)
 
-    const acct = Algo.generateAccount();
+    const acct = await Algo.createNewAccount();
 
     var userAddress = acct.addr;
     console.log({ userAddress });
