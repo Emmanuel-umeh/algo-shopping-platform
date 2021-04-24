@@ -54,7 +54,7 @@ axios.defaults.baseURL = "https://algorandapi.herokuapp.com";
       console.log({ error });
   
       dispatch({
-          type : LOGIN_FAIL
+          type : ORDER_FAILED
       })
     }
   };
