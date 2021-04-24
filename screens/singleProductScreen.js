@@ -131,10 +131,11 @@ const styles = StyleSheet.create({
     color: "white",
   },
   spinner: {
-    flex: 1,
+    // flex: 1,
     position: "absolute",
     alignItems: "center",
     alignContent: "center",
     justifyContent: "center",
+    zIndex : 999
   },
 });
