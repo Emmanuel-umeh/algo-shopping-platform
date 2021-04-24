@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {
     Text, 
     View,
+    StyleSheet,
     Image,
     SafeAreaView } from 'react-native';
     import Carousel from 'react-native-snap-carousel';
@@ -42,15 +43,9 @@ export default class Shop extends Component {
     }
     _renderItem({item,index}){
         return (
-          <View style={{
-              backgroundColor:'floralwhite',
-              borderRadius: 5,
-              height: 250,
-              padding: 50,
-              marginLeft: 25,
-              marginRight: 25, }}>
+          <View style = {styles.carousel}>
 
-                  <Image source = {{
+                  <Image  source = {{
                       uri : item.image
                   }} />
             {/* <Text style={{fontSize: 30}}>{item.title}</Text>
@@ -78,3 +73,14 @@ export default class Shop extends Component {
     }
 }
 
+const styles = StyleSheet.create({
+    carousel : {
+    
+            backgroundColor:'floralwhite',
+            borderRadius: 5,
+            height: 250,
+            padding: 50,
+            marginLeft: 25,
+            marginRight: 25
+    }
+})
