@@ -11,6 +11,10 @@ import {login} from "../redux/actions/auth"
     recover = ()=>{
         this.props.navigation.navigate("Recover")
     }
+
+    createAccount = ()=>{
+        this.props.login()
+    }
     
     render() {
         return (
@@ -33,7 +37,9 @@ import {login} from "../redux/actions/auth"
             </View> */}
      
             <TouchableOpacity style={styles.loginBtn}>
-              <Text style={styles.loginText}>Create An Account</Text>
+              <Text style={styles.loginText} onPress = {()=>{
+                  this.createAccount()
+              }}>Create An Account</Text>
             </TouchableOpacity>
 
             <TouchableOpacity>
