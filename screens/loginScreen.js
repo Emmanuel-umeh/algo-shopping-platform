@@ -23,10 +23,10 @@ import {login} from "../redux/actions/auth"
             <Text style={styles.logo}>Fashion Store</Text>
          
      
-            <TouchableOpacity style={styles.loginBtn}>
-              <Text style={styles.loginText} onPress = {()=>{
+            <TouchableOpacity style={styles.loginBtn} onPress = {()=>{
                   this.createAccount()
-              }}>Create An Account</Text>
+              }}>
+              <Text style={styles.loginText} >Create An Account</Text>
             </TouchableOpacity>
 
             <TouchableOpacity>
