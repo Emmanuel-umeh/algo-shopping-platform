@@ -43,10 +43,8 @@ const styles =StyleSheet.create({
         width : "100%"
     },
     text : {
-        fontSize : 30
+        fontSize : 30,
+        alignSelf : "center"
     },
-    details : {
-        flex : 1,
-        alignContent : "center"
-    }
+   
 })
