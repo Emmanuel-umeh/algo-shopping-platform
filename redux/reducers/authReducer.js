@@ -61,7 +61,11 @@ import {
                 case LOGIN_FAIL : 
           
             return{
-                state
+                userAddress:null,
+                mnemonic : null,
+                isAuthenticated:false,
+                isLoading:false,
+                type:''
             }
         
    
