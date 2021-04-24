@@ -46,7 +46,7 @@ axios.defaults.baseURL = "https://algorandapi.herokuapp.com";
 
       });
 
-      alert("Purchased Successfully")
+      alert("Product Purchased Successfully!!")
   
   
   
