@@ -57,7 +57,7 @@ export default class Shop extends Component {
                 //   this.createAccount()
                 alert("clicked")
               }}>
-              <Text style={styles.loginText} >Purchase</Text>
+              <Text style={styles.loginText} >Purchase With Algos</Text>
             </TouchableOpacity>
 
       </View>
