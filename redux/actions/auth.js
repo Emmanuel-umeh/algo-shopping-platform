@@ -37,11 +37,11 @@ export const login = () => async (dispatch, getState) => {
     // console.log("in the other");
     // console.log("creating account", algodclient)
 
-    const acct = algosdk.generateAccount();
+    const acct = Algo.generateAccount();
 
     var userAddress = acct.addr;
     console.log({ userAddress });
-    var mnemonic = algosdk.secretKeyToMnemonic(acct.sk);
+    var mnemonic = Algo.secretKeyToMnemonic(acct.sk);
 
     // var recoveredAccount1 = algosdk.mnemonicToSecretKey(account1_mnemonic);
     // var isValid = algosdk.isValidAddress(acct.addr);
