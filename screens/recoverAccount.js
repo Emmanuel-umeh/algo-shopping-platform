@@ -134,5 +134,11 @@ const styles =  StyleSheet.create({
       },
       loginText:{
         color:"white"
-      }
+      },
+      spinner: {
+        position : "absolute",
+      marginTop : height/2.7,
+      marginLeft :width/2.7,
+      zIndex : 999
+    },
 })
