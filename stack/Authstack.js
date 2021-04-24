@@ -22,3 +22,13 @@ const Authstack = ({navigation}) => (
 
     </Authstack.Navigator>
 );
+
+
+const mapStateToProps = (state) => ({
+    auth: state.auth,
+    error: state.error,
+  });
+  
+  // export default ProjectForm
+  export default connect(mapStateToProps, { loadUser })(AuthenticatedStack);
+  
