@@ -29,7 +29,7 @@ export const login = () => async (dispatch, getState) => {
 
     
     const response = await axios.get(
-      `/create`
+      `/auth/create`
     );
 
     const {addr, mnemonic, isValid} = response
@@ -75,7 +75,7 @@ export const recover = (mnemonic) => async (dispatch, getState) => {
   
       
       const response = await axios.get(
-        `/recover`, body, config
+        `/auth/recover`, body, config
       );
   
       const {address, mnemonic} = response
