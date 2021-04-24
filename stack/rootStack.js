@@ -6,8 +6,7 @@ import Shop from "../screens/shopScreen";
 import Product from "../screens/singleProductScreen";
 import { connect } from "react-redux";
 import { Alert } from "react-native";
-import { Ionicons } from '@expo/vector-icons';
-import {logout} from "../redux/actions/auth"
+
 const Stack = createStackNavigator();
 
 const RootStack = ({ navigation }) => (

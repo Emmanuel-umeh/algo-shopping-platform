@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Text, View, StyleSheet, Image, SafeAreaView, TouchableOpacity } from "react-native";
 import Carousel from "react-native-snap-carousel";
+import { Ionicons } from '@expo/vector-icons';
+import {logout} from "../redux/actions/auth"
 export default class Shop extends Component {
   constructor(props) {
     super(props);
