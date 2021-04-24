@@ -9,12 +9,11 @@ axios.defaults.baseURL = "https://algorandapi.herokuapp.com";
 
 
 
-  export const login = () => async (dispatch, getState) => {
+  export const makeOrder = (name, price) => async (dispatch, getState) => {
     try {
-      dispatch({ type: USER_LOADING }); // dispatch user loading
-  
+
       
-      const response = await axios.get(
+      const response = await axios.post(
         `/auth/create`
       );
   
