@@ -13,11 +13,11 @@ export const loadUser = (token) => async (dispatch, getState) => {
 
 
     dispatch({ type: USER_LOADING }); // dispatch user loading
-    let userADd
+    let userAddress = '0000'
 
     dispatch({
        type: USER_LOADED,
-        payload: user,
+        payload: userAddress,
         // recentOrders
       }); 
 
