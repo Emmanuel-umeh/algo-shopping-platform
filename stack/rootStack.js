@@ -7,6 +7,7 @@ import Product from "../screens/singleProductScreen";
 import { connect } from "react-redux";
 import { Alert } from "react-native";
 import { Ionicons } from '@expo/vector-icons';
+import {logout} from "../redux/actions/auth"
 const Stack = createStackNavigator();
 
 const RootStack = ({ navigation }) => (
@@ -28,8 +29,19 @@ const RootStack = ({ navigation }) => (
         },
         headerRight: () => (
           <Ionicons name="power" size={32} color="white" onPress = {()=>{
-            // Alert.alert()
-            console.log("s")
+            Alert.alert("Confirm", "Are you sure you want to logout?", [
+              {
+                text: "Cancel",
+                onPress: () => console.log("Cancel Pressed"),
+                style: "cancel",
+              },
+              {
+                text: "OK",
+                onPress: async () => {
+                  this.props.logout
+                },
+              },
+            ]);
           }} />
         ),
       }}
@@ -44,4 +56,4 @@ const mapStateToProps = (state) => ({
 });
 
 // export default ProjectForm
-export default connect(mapStateToProps, null)(RootStack);
+export default connect(mapStateToProps, {logout})(RootStack);
