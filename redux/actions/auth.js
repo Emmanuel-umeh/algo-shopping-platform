@@ -25,7 +25,7 @@ export const loadUser = () => async (dispatch, getState) => {
 export const login = () => async (dispatch, getState) => {
   try {
     dispatch({ type: USER_LOADING }); // dispatch user loading
-    console.log("creating account")
+    console.log("creating account", algodclient)
 
     let acct = algodclient.generateAccount();
 
