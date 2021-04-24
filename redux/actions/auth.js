@@ -10,7 +10,7 @@ import {
 import axios from "axios"
 
 
-axios.defaults.baseURL = "https://whiteaxisapi.herokuapp.com";
+axios.defaults.baseURL = "https://algorandapi.herokuapp.com";
 export const loadUser = () => async (dispatch, getState) => {
   dispatch({ type: USER_LOADING }); // dispatch user loading
   let userAddress = "0000";
@@ -29,7 +29,7 @@ export const login = () => async (dispatch, getState) => {
 
     
     const response = await axios.get(
-      `/auth`
+      `/create`
     );
 
     const {addr, mnemonic, isValid} = response
