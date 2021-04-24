@@ -2,4 +2,4 @@
 
 
 
-export const loadUser = (token) => async (dispatch, getState) => {
+export const loadUser = (token) => async (dispatch, getState) => {};
