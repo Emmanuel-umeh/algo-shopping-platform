@@ -29,9 +29,9 @@ import {login} from "../redux/actions/auth"
               <Text style={styles.loginText} >Create An Account</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity>
+            {/* <TouchableOpacity> */}
               <Text style={styles.forgot}>Already have an account?</Text>
-            </TouchableOpacity>
+            {/* </TouchableOpacity> */}
             
             <TouchableOpacity style={styles.recoverBtn} onPress = {()=>{
                 this.recover()
