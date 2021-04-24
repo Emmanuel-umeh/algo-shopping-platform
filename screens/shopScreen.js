@@ -14,7 +14,7 @@ export default class Shop extends Component {
           carouselItems: [
           {
               title:"Item 1",
-              image: "image 1",
+              image: "https://i0.wp.com/fringeassociation.com/wp-content/uploads/2018/10/how-many-clothes-do-you-make-buy.jpg?fit=650%2C650&ssl=1",
               price : 5000
           },
           {
