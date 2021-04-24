@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, StyleSheet, TextInput } from 'react-native'
+import { Text, View, StyleSheet, TextInput, Button } from 'react-native'
 
 export default class Login extends Component {
     render() {
@@ -11,6 +11,10 @@ export default class Login extends Component {
 
                
                  <Text>Login Screen</Text>
+
+                 <Button title = "Recover Account"> 
+
+                 </Button>
             </View>
         )
     }
