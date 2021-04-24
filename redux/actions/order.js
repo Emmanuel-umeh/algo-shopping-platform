@@ -35,15 +35,15 @@ export const purchase = (price, mnemonic) => async (dispatch, getState) => {
 
     return "Product Purchased Successfully!!";
   } catch (error) {
-    console.log(error.response);
+    console.log(error.response.data.msg);
 
     // alert(error.response.msg ? error.response.msg : "Something went wrong. Please try again")
 
     dispatch({
       type: ORDER_FAILED,
     });
-    return error.response.msg
-      ? error.response.msg
+    return error.response.data.msg
+      ? error.response.data.msg
       : "Something went wrong. Please try again";
   }
 };
