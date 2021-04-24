@@ -14,15 +14,15 @@ const {width,height} = Dimensions.get("window")
     recover = async()=>{
 
         try {
-
-            if(this.state.mnemonic.length < 1){
+            let {mnemonic} = this.state
+            if(!mnemonic ||  mnemonic.length < 1){
                 return alert("Please enter your mnemonic key")
             }
             this.setState({
                 loading : true
             })
 
-         await  this.props.recover(this.state.mnemonic)
+         await  this.props.recover(mnemonic)
     
             this.setState({
                 loading : false
