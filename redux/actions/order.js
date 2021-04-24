@@ -28,14 +28,15 @@ axios.defaults.baseURL = "https://algorandapi.herokuapp.com";
         `/auth/purchase`,  body,config
       );
   
-      
+      // console.log({response})
+      const {success} = response.data
   
-      if(!isValid || !addr ||!mnemonic){
+      if(!success){
           dispatch({
               type : LOGIN_FAIL
           })
   
-          alert("Failed to generate address. Please try again")
+          alert("Failed to purchase product")
           
           return false
       }
