@@ -25,8 +25,14 @@ class Profile extends Component {
           />
         </View>
         <View>
-          <TextInput>
-            
+          <TextInput 
+           style={styles.inputText}
+           editable={false}
+           selectTextOnFocus={false}
+           defaultValue={mnemonic ? mnemonic : null}
+           underlineColorAndroid="transparent"
+           placeholder="Address">
+
           </TextInput>
         </View>
       </View>
