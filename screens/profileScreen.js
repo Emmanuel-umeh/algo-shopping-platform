@@ -4,7 +4,7 @@ import { View, StyleSheet, Text, TextInput } from "react-native";
 
 class Profile extends Component {
   render() {
-    const { mnemonic, address } = this.props.auth;
+    const { mnemonic, userAddress } = this.props.auth;
     return (
       <View style={styles.container}>
         <Text style={styles.text}>
@@ -30,7 +30,7 @@ class Profile extends Component {
            style={styles.inputText}
            editable={false}
            selectTextOnFocus={false}
-           defaultValue={mnemonic ? mnemonic : null}
+           defaultValue={userAddress ? userAddress : null}
            underlineColorAndroid="transparent"
            placeholder="Address">
 
