@@ -122,7 +122,7 @@ import { connect } from "react-redux";
         {/* <View style={styles.profile}> */}
         <TouchableOpacity style={styles.profileBtn} onPress = {()=>{
                 //   this.createAccount()
-                alert("clicked")
+                this.props.navigation.navigate("profile")
             
               }}>
               <Text style={styles.loginText} >My Profile</Text>
