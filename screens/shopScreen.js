@@ -184,6 +184,7 @@ const styles = StyleSheet.create({
   },
   profile : {
     flex : 1,
+    flexDirection : "row",
     alignSelf : "center"
   }
 });
