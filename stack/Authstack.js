@@ -22,11 +22,7 @@ const Authstack = ({navigation}) => (
          }}/>
         
     
-         <Stack.Screen name="Recover" component={Recover} options ={{
-         headerShown : false,
-        
-         
-         }}/>
+         <Stack.Screen name="Recover" component={Recover} />
         
 
 
