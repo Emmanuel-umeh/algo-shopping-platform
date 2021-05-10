@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
         justifyContent : "center"
     },
     text : {
-        fontSize : 17,
+        fontSize : 20,
         fontWeight : 'bold'
     },
     inputText:{
