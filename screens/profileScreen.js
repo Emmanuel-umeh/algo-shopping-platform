@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import {View, StyleSheet, Text, TextInput} from "react-native"
 
 class Profile extends Component {
+
     render() {
         return (
             <View style = {styles.container}>
@@ -14,8 +15,9 @@ class Profile extends Component {
       style={styles.inputText}
       editable={false} 
       selectTextOnFocus={false}
+      defaultValue = {this.props.auth.mnemonic}
       underlineColorAndroid="transparent"
-      placeholder="Type something"
+      placeholder="Mnemonic Key"
       placeholderTextColor="grey"
       numberOfLines={20}
       multiline={true}
