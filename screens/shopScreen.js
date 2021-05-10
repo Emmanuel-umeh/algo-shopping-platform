@@ -172,10 +172,10 @@ const styles = StyleSheet.create({
     marginBottom:10
   },
   profileBtn:{
-    width:"80%",
+    width:"60%",
     backgroundColor:"#fb5b5a",
     borderRadius:25,
-    height:30,
+    height:40,
     alignItems:"center",
     alignSelf : "center",
     justifyContent:"center",
