@@ -9,7 +9,7 @@ class Profile extends Component {
         const {mnemonic} = this.props.auth
         return (
             <View style = {styles.container}>
-                <Text style = {styles.text}>Please ensure you copy and store this down</Text>
+                <Text style = {styles.text}>Please ensure you copy and store your mnemonic key down</Text>
                 
                 <View style={styles.inputView} >
             <TextInput
