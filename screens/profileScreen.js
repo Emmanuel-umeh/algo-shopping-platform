@@ -12,7 +12,8 @@ class Profile extends Component {
                 <View style={styles.inputView} >
             <TextInput
       style={styles.inputText}
-        disabled
+      editable={false} 
+      selectTextOnFocus={false}
       underlineColorAndroid="transparent"
       placeholder="Type something"
       placeholderTextColor="grey"
