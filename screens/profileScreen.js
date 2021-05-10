@@ -13,3 +13,9 @@ export default class ProfileScreen extends Component {
 
 
 
+const mapStateToProps = (state) => ({
+    auth: state.auth,
+  });
+  
+  // export default ProjectForm
+  export default connect(mapStateToProps, null )(ProfileScreen);
