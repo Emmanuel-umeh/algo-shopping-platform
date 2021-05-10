@@ -185,6 +185,7 @@ const styles = StyleSheet.create({
   profile : {
     flex : 1,
     flexDirection : "row",
-    alignSelf : "center"
+    alignSelf : "center",
+    marginBottom : 20 
   }
 });
