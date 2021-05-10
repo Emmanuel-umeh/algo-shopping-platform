@@ -6,6 +6,7 @@ import Shop from "../screens/shopScreen";
 import Product from "../screens/singleProductScreen";
 import { connect } from "react-redux";
 import { Alert } from "react-native";
+import Profile from "../screens/profileScreen";
 
 const Stack = createStackNavigator();
 
@@ -43,6 +44,17 @@ const RootStack = ({ navigation }) => (
    
       // ),
     }} name="Product" component={Product} />
+    <Stack.Screen 
+     options={{
+      title: "product",
+      headerTitleStyle: {
+        color: "white",
+        alignSelf: "center",
+      },
+      // headerRight: () => (
+   
+      // ),
+    }} name="Product" component={Profile} />
   </Stack.Navigator>
 );
 
