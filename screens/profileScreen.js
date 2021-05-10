@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
-import {View, StyleSheet, Text} from "react-native"
+import {View, StyleSheet, Text, TextInput} from "react-native"
 
 export default class ProfileScreen extends Component {
     render() {
@@ -9,6 +9,7 @@ export default class ProfileScreen extends Component {
             <View style = {styles.container}>
                 <Text style = {styles.text}>Please ensure you copy and store this down</Text>
                 
+                <TextInput></TextInput>
             </View>
         )
     }
