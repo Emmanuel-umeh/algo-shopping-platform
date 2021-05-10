@@ -22,7 +22,7 @@ const RootStack = ({ navigation }) => (
       name="Shop"
       component={Shop}
       options={{
-        title: "Latest products",
+        title: "Latest Products",
         headerTitleStyle: {
           color: "white",
           alignSelf: "center",
