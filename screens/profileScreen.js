@@ -6,14 +6,19 @@ import {View, StyleSheet, Text} from "react-native"
 export default class ProfileScreen extends Component {
     render() {
         return (
-            <div>
+            <View style = {styles.container}>
+                <Text>Please ensure you copy and store this down</Text>
                 
-            </div>
+            </View>
         )
     }
 }
 const styles = StyleSheet.create({
 
+    container : {
+        alignContent: "center",
+        justifyContent : "center"
+    }
 })
 
 
