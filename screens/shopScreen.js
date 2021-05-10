@@ -184,8 +184,7 @@ const styles = StyleSheet.create({
     marginBottom:40
   },
   profile : {
-    flex : 1,
-    flexDirection : "row",
+  
     alignSelf : "center",
     marginTop : height - 50 
   }
