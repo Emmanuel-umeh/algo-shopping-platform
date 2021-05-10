@@ -35,10 +35,9 @@ const RootStack = ({ navigation }) => (
     />
     <Stack.Screen 
      options={{
-      title: "product",
+      title: "Product",
       headerTitleStyle: {
         color: "white",
-        alignSelf: "center",
       },
       // headerRight: () => (
    
