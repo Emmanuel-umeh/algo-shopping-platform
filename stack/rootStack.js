@@ -32,7 +32,17 @@ const RootStack = ({ navigation }) => (
       }}
       
     />
-    <Stack.Screen name="Product" component={Product} />
+    <Stack.Screen 
+     options={{
+      title: "product",
+      headerTitleStyle: {
+        color: "white",
+        alignSelf: "center",
+      },
+      // headerRight: () => (
+   
+      // ),
+    }} name="Product" component={Product} />
   </Stack.Navigator>
 );
 
