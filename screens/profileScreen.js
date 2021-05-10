@@ -9,7 +9,21 @@ class Profile extends Component {
             <View style = {styles.container}>
                 <Text style = {styles.text}>Please ensure you copy and store this down</Text>
                 
-                <TextInput></TextInput>
+                <TextInput
+      style={styles.inputText}
+
+      onChangeText = {(mnemonic)=>{
+
+        this.setState({
+            mnemonic
+        })
+      }}
+      underlineColorAndroid="transparent"
+      placeholder="Type something"
+      placeholderTextColor="grey"
+      numberOfLines={20}
+      multiline={true}
+    />
             </View>
         )
     }
