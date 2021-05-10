@@ -183,6 +183,7 @@ const styles = StyleSheet.create({
     marginBottom:40
   },
   profile : {
+    flex : 1,
     alignSelf : "center"
   }
 });
