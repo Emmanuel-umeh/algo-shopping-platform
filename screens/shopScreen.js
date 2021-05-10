@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import { Text, View, StyleSheet, Image, SafeAreaView, TouchableOpacity, Alert } from "react-native";
+import { Text, View, StyleSheet, Image, SafeAreaView, TouchableOpacity, Alert, Dimensions } from "react-native";
 import Carousel from "react-native-snap-carousel";
 import { Ionicons } from '@expo/vector-icons';
 import {logout} from "../redux/actions/auth"
 import { connect } from "react-redux";
 
+const {width, height} = Dimensions.get("window")
  class Shop extends Component {
   constructor(props) {
     super(props);
@@ -186,6 +187,6 @@ const styles = StyleSheet.create({
     flex : 1,
     flexDirection : "row",
     alignSelf : "center",
-    marginBottom : 20 
+    marginTop : height - 50 
   }
 });
