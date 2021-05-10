@@ -32,6 +32,7 @@ class Profile extends Component {
           //  selectTextOnFocus={false}
            defaultValue={userAddress ? userAddress : null}
            underlineColorAndroid="transparent"
+           multiline={true}
            placeholder="Address">
 
           </TextInput>
