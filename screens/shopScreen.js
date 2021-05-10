@@ -173,7 +173,7 @@ const styles = StyleSheet.create({
   },
   profileBtn:{
     width:"60%",
-    backgroundColor:"#fb5b5a",
+    backgroundColor:"crimson",
     borderRadius:25,
     height:40,
     alignItems:"center",
