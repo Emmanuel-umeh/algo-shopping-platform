@@ -24,6 +24,11 @@ class Profile extends Component {
             multiline={true}
           />
         </View>
+        <View>
+          <TextInput>
+            
+          </TextInput>
+        </View>
       </View>
     );
   }
