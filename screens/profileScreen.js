@@ -9,16 +9,24 @@ class Profile extends Component {
             <View style = {styles.container}>
                 <Text style = {styles.text}>Please ensure you copy and store this down</Text>
                 
-                <TextInput
+                <View style={styles.inputView} >
+            <TextInput
       style={styles.inputText}
 
-      disabled
+      onChangeText = {(mnemonic)=>{
+
+        this.setState({
+            mnemonic
+        })
+      }}
       underlineColorAndroid="transparent"
       placeholder="Type something"
       placeholderTextColor="grey"
       numberOfLines={20}
       multiline={true}
     />
+            </View>
+            
             </View>
         )
     }
@@ -37,6 +45,15 @@ const styles = StyleSheet.create({
     inputText:{
         // height:0,
         color:"white"
+      },
+      inputView:{
+        width:"80%",
+        backgroundColor:"#465881",
+        borderRadius:25,
+        height:200,
+        marginBottom:20,
+        justifyContent:"center",
+        padding:20
       },
 })
 
