@@ -29,7 +29,7 @@ class Profile extends Component {
           <TextInput 
            style={styles.inputText}
            editable={false}
-           selectTextOnFocus={false}
+          //  selectTextOnFocus={false}
            defaultValue={userAddress ? userAddress : null}
            underlineColorAndroid="transparent"
            placeholder="Address">
