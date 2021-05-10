@@ -119,7 +119,7 @@ import { connect } from "react-redux";
           />
         </View>
 
-        <View style={styles.profile}>
+        {/* <View style={styles.profile}> */}
         <TouchableOpacity style={styles.loginBtn} onPress = {()=>{
                 //   this.createAccount()
                 alert("clicked")
@@ -127,7 +127,7 @@ import { connect } from "react-redux";
               }}>
               <Text style={styles.loginText} >My Profile</Text>
             </TouchableOpacity>
-        </View>
+        {/* </View> */}
       </SafeAreaView>
     );
   }
