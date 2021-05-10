@@ -24,18 +24,18 @@ class Profile extends Component {
             multiline={true}
           />
         </View>
-        
-        <View style={styles.inputView}>
-          <TextInput 
-           style={styles.inputText}
-           editable={false}
-          //  selectTextOnFocus={false}
-           defaultValue={userAddress ? userAddress : null}
-           underlineColorAndroid="transparent"
-           multiline={true}
-           placeholder="Address">
 
-          </TextInput>
+        <Text style={styles.text}>Your Address</Text>
+        <View style={styles.inputView}>
+          <TextInput
+            style={styles.inputText}
+            editable={false}
+            //  selectTextOnFocus={false}
+            defaultValue={userAddress ? userAddress : null}
+            underlineColorAndroid="transparent"
+            multiline={true}
+            placeholder="Address"
+          ></TextInput>
         </View>
       </View>
     );
