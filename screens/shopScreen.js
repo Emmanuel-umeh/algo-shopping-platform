@@ -80,7 +80,7 @@ import { connect } from "react-redux";
         <Text> {item.price} algos</Text>
             {/* <Text></Text> */}
 
-            <TouchableOpacity style={styles.loginBtn} onPress = {()=>{
+            <TouchableOpacity style={styles.purchaseBtn} onPress = {()=>{
                 //   this.createAccount()
                 // alert("clicked")
              this.goToSingleProduct(item)
@@ -120,7 +120,7 @@ import { connect } from "react-redux";
         </View>
 
         {/* <View style={styles.profile}> */}
-        <TouchableOpacity style={styles.loginBtn} onPress = {()=>{
+        <TouchableOpacity style={styles.purchaseBtn} onPress = {()=>{
                 //   this.createAccount()
                 alert("clicked")
             
@@ -161,7 +161,17 @@ const styles = StyleSheet.create({
     paddingTop: 50,
   },
 
-  loginBtn:{
+  purchaseBtn:{
+    width:"80%",
+    backgroundColor:"#fb5b5a",
+    borderRadius:25,
+    height:30,
+    alignItems:"center",
+    justifyContent:"center",
+    marginTop:10,
+    marginBottom:10
+  },
+  profileBtn:{
     width:"80%",
     backgroundColor:"#fb5b5a",
     borderRadius:25,
