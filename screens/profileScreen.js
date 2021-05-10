@@ -24,7 +24,8 @@ class Profile extends Component {
             multiline={true}
           />
         </View>
-        <View>
+        
+        <View style={styles.inputView}>
           <TextInput 
            style={styles.inputText}
            editable={false}
