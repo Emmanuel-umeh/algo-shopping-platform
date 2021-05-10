@@ -12,13 +12,7 @@ class Profile extends Component {
                 <View style={styles.inputView} >
             <TextInput
       style={styles.inputText}
-
-      onChangeText = {(mnemonic)=>{
-
-        this.setState({
-            mnemonic
-        })
-      }}
+        disabled
       underlineColorAndroid="transparent"
       placeholder="Type something"
       placeholderTextColor="grey"
