@@ -118,6 +118,8 @@ import { connect } from "react-redux";
             onSnapToItem={(index) => this.setState({ activeIndex: index })}
           />
         </View>
+
+        <View></View>
       </SafeAreaView>
     );
   }
