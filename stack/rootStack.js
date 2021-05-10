@@ -45,10 +45,9 @@ const RootStack = ({ navigation }) => (
     }} name="Product" component={Product} />
     <Stack.Screen 
      options={{
-      title: "profile",
+      title: "My Profile",
       headerTitleStyle: {
         color: "white",
-        alignSelf: "center",
       },
       // headerRight: () => (
    
