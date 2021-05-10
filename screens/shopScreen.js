@@ -119,7 +119,7 @@ import { connect } from "react-redux";
           />
         </View>
 
-        <View>
+        <View style={styles.profile}>
         <TouchableOpacity style={styles.loginBtn} onPress = {()=>{
                 //   this.createAccount()
                 alert("clicked")
@@ -182,4 +182,7 @@ const styles = StyleSheet.create({
     alignSelf : "center",
     marginBottom:40
   },
+  profile : {
+    alignSelf : "center"
+  }
 });
