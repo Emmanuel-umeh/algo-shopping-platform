@@ -120,7 +120,7 @@ import { connect } from "react-redux";
         </View>
 
         {/* <View style={styles.profile}> */}
-        <TouchableOpacity style={styles.purchaseBtn} onPress = {()=>{
+        <TouchableOpacity style={styles.profileBtn} onPress = {()=>{
                 //   this.createAccount()
                 alert("clicked")
             
@@ -176,6 +176,7 @@ const styles = StyleSheet.create({
     backgroundColor:"#fb5b5a",
     borderRadius:25,
     height:30,
+    marginLeft : "10%",
     alignItems:"center",
     alignSelf : "center",
     justifyContent:"center",
