@@ -12,12 +12,7 @@ class Profile extends Component {
                 <TextInput
       style={styles.inputText}
 
-      onChangeText = {(mnemonic)=>{
-
-        this.setState({
-            mnemonic
-        })
-      }}
+      disabled
       underlineColorAndroid="transparent"
       placeholder="Type something"
       placeholderTextColor="grey"
@@ -38,7 +33,11 @@ const styles = StyleSheet.create({
     text : {
         fontSize : 17,
         fontWeight : 'bold'
-    }
+    },
+    inputText:{
+        // height:0,
+        color:"white"
+      },
 })
 
 
