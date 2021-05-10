@@ -4,7 +4,7 @@ import { View, StyleSheet, Text, TextInput } from "react-native";
 
 class Profile extends Component {
   render() {
-    const { mnemonic } = this.props.auth;
+    const { mnemonic, address } = this.props.auth;
     return (
       <View style={styles.container}>
         <Text style={styles.text}>
