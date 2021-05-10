@@ -6,6 +6,7 @@ import {View, StyleSheet, Text, TextInput} from "react-native"
 class Profile extends Component {
 
     render() {
+        const {mnemonic} = this.props.auth
         return (
             <View style = {styles.container}>
                 <Text style = {styles.text}>Please ensure you copy and store this down</Text>
@@ -15,7 +16,7 @@ class Profile extends Component {
       style={styles.inputText}
       editable={false} 
       selectTextOnFocus={false}
-      defaultValue = {this.props.auth.mnemonic}
+      defaultValue = {mnemonic ? mnemonic : null}
       underlineColorAndroid="transparent"
       placeholder="Mnemonic Key"
       placeholderTextColor="grey"
