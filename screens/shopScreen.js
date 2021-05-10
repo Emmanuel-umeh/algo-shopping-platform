@@ -1,11 +1,19 @@
 import React, { Component } from "react";
-import { Text, View, StyleSheet, Image, SafeAreaView, TouchableOpacity, Alert } from "react-native";
+import {
+  Text,
+  View,
+  StyleSheet,
+  Image,
+  SafeAreaView,
+  TouchableOpacity,
+  Alert,
+} from "react-native";
 import Carousel from "react-native-snap-carousel";
-import { Ionicons } from '@expo/vector-icons';
-import {logout} from "../redux/actions/auth"
+import { Ionicons } from "@expo/vector-icons";
+import { logout } from "../redux/actions/auth";
 import { connect } from "react-redux";
 
- class Shop extends Component {
+class Shop extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -45,10 +53,14 @@ import { connect } from "react-redux";
     };
   }
 
-  componentDidMount(){
-       this.props.navigation.setOptions({
+  componentDidMount() {
+    this.props.navigation.setOptions({
       headerRight: () => (
-          <Ionicons name="power" size={32} color="white" onPress = {()=>{
+        <Ionicons
+          name="power"
+          size={32}
+          color="white"
+          onPress={() => {
             Alert.alert("Confirm", "Are you sure you want to logout?", [
               {
                 text: "Cancel",
@@ -58,56 +70,55 @@ import { connect } from "react-redux";
               {
                 text: "OK",
                 onPress: async () => {
-                  this.props.logout()
+                  this.props.logout();
                 },
               },
             ]);
-          }} />
+          }}
+        />
       ),
     });
   }
-  _renderItem =({ item, index }) => {
+  _renderItem = ({ item, index }) => {
     return (
       <View style={styles.carousel}>
         <Image
-
-        style = {styles.image}
+          style={styles.image}
           source={{
             uri: item.image,
           }}
         />
-        <Text style={{fontSize: 30}}>{item.title} </Text>
+        <Text style={{ fontSize: 30 }}>{item.title} </Text>
         <Text> {item.price} algos</Text>
-            {/* <Text></Text> */}
+        {/* <Text></Text> */}
 
-            <TouchableOpacity style={styles.purchaseBtn} onPress = {()=>{
-                //   this.createAccount()
-                // alert("clicked")
-             this.goToSingleProduct(item)
-              }}>
-              <Text style={styles.loginText} >Purchase Product</Text>
-            </TouchableOpacity>
-
+        <TouchableOpacity
+          style={styles.purchaseBtn}
+          onPress={() => {
+            //   this.createAccount()
+            // alert("clicked")
+            this.goToSingleProduct(item);
+          }}
+        >
+          <Text style={styles.loginText}>Purchase Product</Text>
+        </TouchableOpacity>
       </View>
     );
-  }
+  };
 
-
-  goToSingleProduct = (item)=>{
-    this.props.navigation.navigate("Product" , {
-        item
-    })
-  }
+  goToSingleProduct = (item) => {
+    this.props.navigation.navigate("Product", {
+      item,
+    });
+  };
   render() {
     return (
       <SafeAreaView style={styles.container}>
+        <Text style={styles.logo}>Fashion Store</Text>
 
-<Text style={styles.logo}>Fashion Store</Text>
-         
         <View
           style={{ flex: 1, flexDirection: "row", justifyContent: "center" }}
         >
-
           <Carousel
             layout={"default"}
             ref={(ref) => (this.carousel = ref)}
@@ -120,13 +131,15 @@ import { connect } from "react-redux";
         </View>
 
         {/* <View style={styles.profile}> */}
-        <TouchableOpacity style={styles.profileBtn} onPress = {()=>{
-                //   this.createAccount()
-                this.props.navigation.navigate("Profile")
-            
-              }}>
-              <Text style={styles.loginText} >My Profile</Text>
-            </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.profileBtn}
+          onPress={() => {
+            //   this.createAccount()
+            this.props.navigation.navigate("Profile");
+          }}
+        >
+          <Text style={styles.loginText}>My Profile</Text>
+        </TouchableOpacity>
         {/* </View> */}
       </SafeAreaView>
     );
@@ -134,12 +147,11 @@ import { connect } from "react-redux";
 }
 
 const mapStateToProps = (state) => ({
-    auth: state.auth,
-  });
-  
-  // export default ProjectForm
-  export default connect(mapStateToProps, {logout})(Shop);
-  
+  auth: state.auth,
+});
+
+// export default ProjectForm
+export default connect(mapStateToProps, { logout })(Shop);
 
 const styles = StyleSheet.create({
   carousel: {
@@ -149,11 +161,12 @@ const styles = StyleSheet.create({
     padding: 5,
     marginLeft: 25,
     marginRight: 25,
-    alignItems : "center"  },
+    alignItems: "center",
+  },
 
-  image : {
-      height : "90%",
-      width : "100%"
+  image: {
+    height: "90%",
+    width: "100%",
   },
   container: {
     flex: 1,
@@ -161,40 +174,39 @@ const styles = StyleSheet.create({
     paddingTop: 50,
   },
 
-  purchaseBtn:{
-    width:"80%",
-    backgroundColor:"#fb5b5a",
-    borderRadius:25,
-    height:30,
-    alignItems:"center",
-    justifyContent:"center",
-    marginTop:10,
-    marginBottom:10
+  purchaseBtn: {
+    width: "80%",
+    backgroundColor: "#fb5b5a",
+    borderRadius: 25,
+    height: 30,
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: 10,
+    marginBottom: 10,
   },
-  profileBtn:{
-    width:"60%",
-    backgroundColor:"crimson",
-    borderRadius:25,
-    height:40,
-    alignItems:"center",
-    alignSelf : "center",
-    justifyContent:"center",
-    marginTop:10,
-    marginBottom:10
+  profileBtn: {
+    width: "60%",
+    backgroundColor: "crimson",
+    borderRadius: 25,
+    height: 40,
+    alignItems: "center",
+    alignSelf: "center",
+    justifyContent: "center",
+    marginTop: 10,
+    marginBottom: 10,
   },
 
-  loginText:{
-    color:"white"
+  loginText: {
+    color: "white",
   },
-  logo:{
-    fontWeight:"bold",
-    fontSize:50,
-    color:"#fb5b5a",
-    alignSelf : "center",
-    marginBottom:40
+  logo: {
+    fontWeight: "bold",
+    fontSize: 50,
+    color: "#fb5b5a",
+    alignSelf: "center",
+    marginBottom: 40,
   },
-  profile : {
- 
-    alignSelf : "center"
-  }
+  profile: {
+    alignSelf: "center",
+  },
 });

@@ -7,11 +7,11 @@ import {
   StyleSheet,
   Alert,
   ActivityIndicator,
-  Dimensions
+  Dimensions,
 } from "react-native";
 import { connect } from "react-redux";
 import { purchase } from "../redux/actions/order";
-const {width, height} = Dimensions.get("window")
+const { width, height } = Dimensions.get("window");
 class Product extends Component {
   componentDidMount() {
     const { item } = this.props.route.params;
@@ -56,7 +56,6 @@ class Product extends Component {
     ]);
   };
   render() {
-  
     const { item } = this.props.route.params;
     return (
       <View style={styles.container}>
@@ -133,9 +132,9 @@ const styles = StyleSheet.create({
     color: "white",
   },
   spinner: {
-      position : "absolute",
-    marginTop : height/2.7,
-    marginLeft :width/2.7,
-    zIndex : 999
+    position: "absolute",
+    marginTop: height / 2.7,
+    marginLeft: width / 2.7,
+    zIndex: 999,
   },
 });
