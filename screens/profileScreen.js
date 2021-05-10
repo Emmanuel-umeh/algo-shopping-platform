@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import {View, StyleSheet, Text, TextInput} from "react-native"
 
-export default class Profile extends Component {
+class Profile extends Component {
     render() {
         return (
             <View style = {styles.container}>
