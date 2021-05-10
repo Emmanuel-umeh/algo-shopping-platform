@@ -7,7 +7,7 @@ export default class ProfileScreen extends Component {
     render() {
         return (
             <View style = {styles.container}>
-                <Text>Please ensure you copy and store this down</Text>
+                <Text style = {styles.text}>Please ensure you copy and store this down</Text>
                 
             </View>
         )
@@ -18,6 +18,10 @@ const styles = StyleSheet.create({
     container : {
         alignContent: "center",
         justifyContent : "center"
+    },
+    text : {
+        fontSize : 17,
+        fontWeight : 'bold'
     }
 })
 
