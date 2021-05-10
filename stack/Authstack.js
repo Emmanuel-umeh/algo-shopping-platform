@@ -7,7 +7,11 @@ import Recover from "../screens/recoverAccount";
 const Stack = createStackNavigator();
 
 const Authstack = ({ navigation }) => (
-  <Stack.Navigator>
+  <Stack.Navigator  screenOptions={{
+    headerStyle: {
+      backgroundColor: "crimson",
+    },
+  }}>
     <Stack.Screen
       name="Login"
       component={Login}
