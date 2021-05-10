@@ -23,7 +23,7 @@ class Profile extends Component {
             numberOfLines={20}
             multiline={true}
           />
-        </View>
+        </View>0
 
         <Text style={styles.text}>Your Address</Text>
         <View style={styles.inputView}>
