@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import {View, StyleSheet, Text, TextInput} from "react-native"
 
-export default class ProfileScreen extends Component {
+export default class Profile extends Component {
     render() {
         return (
             <View style = {styles.container}>
@@ -32,4 +32,4 @@ const mapStateToProps = (state) => ({
   });
   
   // export default ProjectForm
-  export default connect(mapStateToProps, null )(ProfileScreen);
+  export default connect(mapStateToProps, null )(Profile);
