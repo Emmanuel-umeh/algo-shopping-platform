@@ -55,6 +55,7 @@ class Shop extends Component {
   }
 
   componentDidMount() {
+    const { mnemonic } = this.props.auth;
     this.props.navigation.setOptions({
       headerRight: () => (
         <Ionicons
@@ -79,8 +80,7 @@ class Shop extends Component {
         />
       ),
     });
-this.props.fetch_balance()
-    
+    this.props.fetch_balance(mnemonic);
   }
   _renderItem = ({ item, index }) => {
     return (
@@ -128,8 +128,6 @@ this.props.fetch_balance()
             onSnapToItem={(index) => this.setState({ activeIndex: index })}
           />
         </View>
-
-     
       </SafeAreaView>
     );
   }
