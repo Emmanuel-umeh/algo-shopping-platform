@@ -24,12 +24,10 @@ export const purchase = (price, mnemonic) => async (dispatch, getState) => {
         type: ORDER_FAILED,
       });
 
-
-
       return "Failed to purchase product";
     }
 
-    dispatch({ 
+    dispatch({
       type: ORDER_SUCCESSFUL,
     });
 

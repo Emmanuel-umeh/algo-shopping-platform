@@ -15,13 +15,13 @@ import { fetch_balance } from "../redux/actions/auth";
 const { width, height } = Dimensions.get("window");
 class Product extends Component {
   componentDidMount() {
+    
     const { item } = this.props.route.params;
     console.log({ item });
     if (!item) {
       this.props.navigation.pop();
     }
   }
-  
 
   state = {
     loading: false,

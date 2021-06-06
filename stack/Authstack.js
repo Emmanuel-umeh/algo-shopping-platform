@@ -10,13 +10,13 @@ const Authstack = ({ navigation }) => (
   <Stack.Navigator  screenOptions={{
     headerStyle: {
       backgroundColor: "crimson",
-    },
+    }
   }}>
     <Stack.Screen
       name="Login"
       component={Login}
       options={{
-        headerShown: false,
+        headerShown: false
       }}
     />
 

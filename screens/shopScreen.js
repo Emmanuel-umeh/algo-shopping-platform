@@ -80,10 +80,11 @@ class Shop extends Component {
         />
       ),
     });
-    
   
-    this.props.fetch_balance(mnemonic);
+    this.props.fetch_balance(mnemonic)
   }
+
+  
   _renderItem = ({ item, index }) => {
     return (
       <View style={styles.carousel}>
@@ -94,7 +95,7 @@ class Shop extends Component {
           }}
         />
         <Text style={{ fontSize: 30 }}>{item.title} </Text>
-        <Text> {item.price} algos</Text>
+        <Text> {item.price} algos </Text>
         <TouchableOpacity
           style={styles.purchaseBtn}
           onPress={() => {

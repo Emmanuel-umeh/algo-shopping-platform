@@ -12,7 +12,7 @@ export default function Profile() {
     useCallback(() => {
       dispatch(fetch_balance(mnemonic));
     }, [userAddress])
-  );
+  )
 
   return (
     <View style={styles.container}>

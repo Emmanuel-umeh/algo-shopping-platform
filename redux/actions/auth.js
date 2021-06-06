@@ -43,7 +43,7 @@ export const login = () => async (dispatch, getState) => {
       type: LOGIN_FAIL,
     });
   }
-};
+}
 
 export const recover = (mnemonic) => async (dispatch, getState) => {
   try {

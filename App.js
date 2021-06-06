@@ -1,4 +1,3 @@
-
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import Authstack from "./stack/Authstack";
@@ -17,4 +16,4 @@ const mapStateToProps = (state) => ({
 });
 
 // export default ProjectForm
-export default connect(mapStateToProps, { })(App);
+export default connect(mapStateToProps, {})(App);

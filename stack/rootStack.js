@@ -13,8 +13,8 @@ const RootStack = ({ navigation }) => (
   <Stack.Navigator
     screenOptions={{
       headerStyle: {
-        backgroundColor: "crimson",
-      },
+        backgroundColor: "crimson"
+      }
     }}
   >
     <Stack.Screen
