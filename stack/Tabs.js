@@ -64,7 +64,7 @@ const Tabs = () => {
         },
       }}
     />
-    <Stack.Screen
+    {/* <Stack.Screen
       options={{
         title: "Product",
         headerTitleStyle: {
@@ -73,7 +73,7 @@ const Tabs = () => {
       }}
       name="Product"
       component={Product}
-    />
+    /> */}
     <Tab.Screen
       options={{
         title: "My Profile",
