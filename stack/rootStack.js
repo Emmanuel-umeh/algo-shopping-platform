@@ -16,37 +16,7 @@ const RootStack = ({ navigation }) => (
       },
     }}
   >
-    <Stack.Screen
-      name="Shop"
-      component={Shop}
-      options={{
-        title: "Latest Products",
-        headerTitleStyle: {
-          color: "white",
-          alignSelf: "center",
-        },
-      }}
-    />
-    <Stack.Screen
-      options={{
-        title: "Product",
-        headerTitleStyle: {
-          color: "white",
-        },
-      }}
-      name="Product"
-      component={Product}
-    />
-    <Stack.Screen
-      options={{
-        title: "My Profile",
-        headerTitleStyle: {
-          color: "white",
-        },
-      }}
-      name="Profile"
-      component={Profile}
-    />
+ 
   </Stack.Navigator>
 );
 
