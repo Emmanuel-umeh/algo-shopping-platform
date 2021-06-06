@@ -3,6 +3,7 @@ import {
   LOGIN_SUCCESS,
   LOGIN_FAIL,
   LOGOUT_SUCCESS,
+  FETCH_BALANCE,
 } from "./types";
 
 import axios from "axios"
@@ -129,34 +130,14 @@ export const recover = (mnemonic) => async (dispatch, getState) => {
       const response = await axios.get(
         `/purchase/account-balance`
       );
-  
-      // console.log({response})
-      const {addr, mnemonic, isValid} = response.data
-  
-      if(!isValid || !addr ||!mnemonic){
-          dispatch({
-              type : LOGIN_FAIL
-          })
-  
-          alert("Failed to generate address. Please try again")
-          
-          return false
-      }
-      
+
       dispatch({
-        type: LOGIN_SUCCESS,
-        userAddress: addr,
-        mnemonic: mnemonic,
-        // recentOrders
+        type: FETCH_BALANCE,
+        balance :response.data
       });
-  
-  
-  
+
     } catch (error) {
       console.log({ error });
-  
-      dispatch({
-          type : LOGIN_FAIL
-      })
+
     }
   };
