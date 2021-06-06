@@ -8,6 +8,10 @@ class Profile extends Component {
     return (
       <View style={styles.container}>
         <ScrollView>
+
+          <View style  ={styles.balance}>
+            <Text></Text>
+          </View>
         <Text style={styles.text}>
           Please ensure you copy and store your mnemonic key down
         </Text>
@@ -70,6 +74,9 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     padding: 20,
   },
+  balance : {
+    padding  : 20
+  }
 });
 
 const mapStateToProps = (state) => ({
