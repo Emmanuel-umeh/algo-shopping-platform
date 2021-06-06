@@ -1,4 +1,5 @@
-import React, { useFocusEffect, useCallback } from "react";
+import React, {useCallback } from "react";
+import {useFocusEffect} from '@react-navigation/native'
 import { View, StyleSheet, Text, TextInput, ScrollView } from "react-native";
 import {useSelector, useDispatch} from "react-redux"
 import {fetch_balance} from "../redux/actions/auth"
