@@ -13,7 +13,9 @@ class Profile extends Component {
             <Text style = {styles.text}>Current Balance</Text>
             <Text style = {styles.text}>0 Algos</Text>
           </View>
-        <Text style={styles.text}>
+        <Text style={[styles.text, {
+          paddingTop : 4
+        }]}>
           Please ensure you copy and store your mnemonic key down
         </Text>
 
