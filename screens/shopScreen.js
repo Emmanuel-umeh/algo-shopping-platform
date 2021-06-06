@@ -127,11 +127,10 @@ class Shop extends Component {
           />
         </View>
 
-        {/* <View style={styles.profile}> */}
         <TouchableOpacity
           style={styles.profileBtn}
           onPress={() => {
-            //   this.createAccount()
+        
             this.props.navigation.navigate("Profile");
           }}
         >
