@@ -50,7 +50,6 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 20,
     fontWeight: "bold",
-    alignSelf : "center"
   },
   inputText: {
     // height:0,
