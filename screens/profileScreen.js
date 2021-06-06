@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { View, StyleSheet, Text, TextInput, ScrollView } from "react-native";
+import {useSelector} from "react-redux"
 
-class Profile extends Component {
-  render() {
-    const { mnemonic, userAddress } = this.props.auth;
-    return (
+export default function Profile() {
+const {mnemonic, userAddress} = useSelector(state => state.auth)
+  
+  return (
+
       <View style={styles.container}>
         <ScrollView>
 
@@ -45,9 +47,10 @@ class Profile extends Component {
         </View>
         </ScrollView>
       </View>
-    );
-  }
+  
+  )
 }
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -81,9 +84,3 @@ const styles = StyleSheet.create({
   }
 });
 
-const mapStateToProps = (state) => ({
-  auth: state.auth,
-});
-
-// export default ProjectForm
-export default connect(mapStateToProps, null)(Profile);
