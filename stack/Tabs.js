@@ -41,7 +41,7 @@ const Tabs = () => {
     screenOptions = {screenOptions}
       tabBarOptions ={{
           showLabel : true,
-          activeTintColor: colors.safron,
+          activeTintColor: "crimson",
           // inactiveTintColor: '#fff',
         
           style : {
