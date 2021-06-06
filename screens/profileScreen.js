@@ -11,6 +11,7 @@ class Profile extends Component {
 
           <View style  ={styles.balance}>
             <Text style = {styles.text}>Current Balance</Text>
+            <Text style = {styles.text}>0 Algos</Text>
           </View>
         <Text style={styles.text}>
           Please ensure you copy and store your mnemonic key down
