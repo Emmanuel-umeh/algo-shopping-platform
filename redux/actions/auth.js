@@ -110,7 +110,7 @@ export const fetch_balance = (mnemonic) => async (dispatch, getState) => {
 
     const body = JSON.stringify({ mnemonic });
 
-    const response = await axios.post(`/purchase/account-balance`, body, config);
+    const response = await axios.get(`/purchase/account-balance`, body, config);
 
     console.log(response.data);
 
