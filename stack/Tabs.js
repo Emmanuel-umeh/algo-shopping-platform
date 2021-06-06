@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import {StyleSheet} from "react-native"
 import Profile from "../account/account_analytics";
 import Subscribe from "../account/subscription";
-import colors from '../colors/colors';
 import {MaterialIcons} from "@expo/vector-icons"
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
@@ -11,7 +10,7 @@ const Tab = createBottomTabNavigator();
 const screenOptions = ({route}) =>({
   tabBarIcon : ({focused}) => {
     let icon = '';
-    const color = focused ? colors.red : "#828282"
+    const color = focused ? "crimson": "#828282"
     const size = 24
 
 
