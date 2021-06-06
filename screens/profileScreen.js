@@ -1,30 +1,35 @@
-import React, {useCallback } from "react";
-import {useFocusEffect} from '@react-navigation/native'
+import React, { useCallback } from "react";
+import { useFocusEffect } from "@react-navigation/native";
 import { View, StyleSheet, Text, TextInput, ScrollView } from "react-native";
-import {useSelector, useDispatch} from "react-redux"
-import {fetch_balance} from "../redux/actions/auth"
+import { useSelector, useDispatch } from "react-redux";
+import { fetch_balance } from "../redux/actions/auth";
 
 export default function Profile() {
-const {mnemonic, userAddress, balance} = useSelector(state => state.auth)
-const dispatch = useDispatch()
+  const { mnemonic, userAddress, balance } = useSelector((state) => state.auth);
+  const dispatch = useDispatch();
 
-useFocusEffect(
-  useCallback(() => {
-   dispatch(fetch_balance(mnemonic));
-  }, [userAddress])
-);
+  useFocusEffect(
+    useCallback(() => {
+      dispatch(fetch_balance(mnemonic));
+    }, [userAddress])
+  );
 
   return (
-
-      <View style={styles.container}>
-        <ScrollView>
-
-          <View style  ={styles.balance}>
-            <Text style = {styles.text}>Current Balance</Text>
-            <Text style = {[styles.text, {
-              fontWeight : "bold"
-            }]}>{balance} Algos</Text>
-          </View>
+    <View style={styles.container}>
+      <ScrollView>
+        <View style={styles.balance}>
+          <Text style={styles.text}>Current Balance</Text>
+          <Text
+            style={[
+              styles.text,
+              {
+                fontWeight: "bold",
+              },
+            ]}
+          >
+            {balance} Algos
+          </Text>
+        </View>
         <Text style={styles.text}>
           Please ensure you copy and store your mnemonic key down
         </Text>
@@ -55,10 +60,9 @@ useFocusEffect(
             placeholder="Address"
           ></TextInput>
         </View>
-        </ScrollView>
-      </View>
-  
-  )
+      </ScrollView>
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
@@ -70,10 +74,10 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 20,
     fontWeight: "600",
-    padding : 20,
-    paddingTop : 0,
+    padding: 20,
+    paddingTop: 0,
 
-    alignSelf : "center"
+    alignSelf: "center",
   },
   inputText: {
     // height:0,
@@ -89,8 +93,7 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     padding: 20,
   },
-  balance : {
-    padding  : 20
-  }
+  balance: {
+    padding: 20,
+  },
 });
-

@@ -21,6 +21,7 @@ class Product extends Component {
       this.props.navigation.pop();
     }
   }
+  
 
   state = {
     loading: false,
@@ -81,7 +82,6 @@ class Product extends Component {
           <TouchableOpacity
             style={styles.loginBtn}
             onPress={() => {
-  
               this.purchaseProduct();
             }}
           >

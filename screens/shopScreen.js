@@ -80,6 +80,7 @@ class Shop extends Component {
         />
       ),
     });
+    
   
     this.props.fetch_balance(mnemonic);
   }
