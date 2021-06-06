@@ -126,7 +126,6 @@ export const recover = (mnemonic) => async (dispatch, getState) => {
     try {
       dispatch({ type: USER_LOADING }); // dispatch user loading
   
-      
       const response = await axios.get(
         `/purchase/account-balance`
       );
