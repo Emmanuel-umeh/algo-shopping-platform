@@ -78,10 +78,7 @@ class Product extends Component {
           <TouchableOpacity
             style={styles.loginBtn}
             onPress={() => {
-              //   this.createAccount()
-              // alert("clicked")
-              //  this.goToSingleProduct(item)
-
+  
               this.purchaseProduct();
             }}
           >
@@ -98,7 +95,6 @@ const mapStateToProps = (state) => ({
   order: state.order,
 });
 
-// export default ProjectForm
 export default connect(mapStateToProps, { purchase })(Product);
 
 const styles = StyleSheet.create({
