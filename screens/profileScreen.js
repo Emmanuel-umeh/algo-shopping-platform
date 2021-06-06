@@ -10,7 +10,7 @@ class Profile extends Component {
         <ScrollView>
 
           <View style  ={styles.balance}>
-            <Text></Text>
+            <Text style = {styles.text}>Current Balance</Text>
           </View>
         <Text style={styles.text}>
           Please ensure you copy and store your mnemonic key down
