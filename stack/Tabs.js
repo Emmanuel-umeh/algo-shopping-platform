@@ -52,15 +52,37 @@ const Tabs = () => {
          
       }}
     >
-      <Tab.Screen  name="Home" component={Account_analytics}></Tab.Screen>
-
-
-
-      
-<Tab.Screen options ={{
-  title : "Profile"
-}} name="Cards"component={Profile} ></Tab.Screen>
-
+    <Tab.Screen
+      name="Shop"
+      component={Shop}
+      options={{
+        title: "Latest Products",
+        headerTitleStyle: {
+          color: "white",
+          alignSelf: "center",
+        },
+      }}
+    />
+    <Tab.Screen
+      options={{
+        title: "Product",
+        headerTitleStyle: {
+          color: "white",
+        },
+      }}
+      name="Product"
+      component={Product}
+    />
+    <Tab.Screen
+      options={{
+        title: "My Profile",
+        headerTitleStyle: {
+          color: "white",
+        },
+      }}
+      name="Profile"
+      component={Profile}
+    />
 
 
     </Tab.Navigator>
