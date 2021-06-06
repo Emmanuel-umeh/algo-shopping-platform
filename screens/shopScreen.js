@@ -18,6 +18,7 @@ class Shop extends Component {
     super(props);
     this.state = {
       activeIndex: 0,
+      // dummy data
       carouselItems: [
         {
           title: "Hoodie",
