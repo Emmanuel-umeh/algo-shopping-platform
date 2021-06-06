@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
+import React, { useEffect } from "react";
 import { View, StyleSheet, Text, TextInput, ScrollView } from "react-native";
 import {useSelector, useDispatch} from "react-redux"
 import {fetch_balance} from "../redux/actions/auth"
@@ -7,7 +6,12 @@ import {fetch_balance} from "../redux/actions/auth"
 export default function Profile() {
 const {mnemonic, userAddress, balance} = useSelector(state => state.auth)
 const dispatch = useDispatch()
-dispatch(fetch_balance(mnemonic))
+
+useEffect(() => {
+  dispatch(fetch_balance(mnemonic))
+ 
+}, [mnemonic, userAddress])
+
   return (
 
       <View style={styles.container}>
