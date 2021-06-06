@@ -35,7 +35,7 @@ class Profile extends Component {
         <View style={styles.inputView}>
           <TextInput
             style={styles.inputText}
-            editable={false}
+            // editable={false}
             //  selectTextOnFocus={false}
             value={userAddress ? userAddress : null}
             underlineColorAndroid="transparent"
