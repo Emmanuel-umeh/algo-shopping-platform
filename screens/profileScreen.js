@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useFocusEffect } from "react";
 import { View, StyleSheet, Text, TextInput, ScrollView } from "react-native";
 import {useSelector, useDispatch} from "react-redux"
 import {fetch_balance} from "../redux/actions/auth"
@@ -7,10 +7,15 @@ export default function Profile() {
 const {mnemonic, userAddress, balance} = useSelector(state => state.auth)
 const dispatch = useDispatch()
 
-useEffect(() => {
-  dispatch(fetch_balance(mnemonic))
+// useEffect(() => {
+//   dispatch(fetch_balance(mnemonic))
  
-}, [])
+// }, [])
+useFocusEffect(
+  React.useCallback(() => {
+   dispatch(fetch_balance(mnemonic));
+  }, [userAddress])
+);
 
   return (
 
