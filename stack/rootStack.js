@@ -21,7 +21,7 @@ const RootStack = ({ navigation }) => (
       name="Shop"
       component={Tabs}
       options={{
-        title: "Latest Products",
+        title: "Home",
         headerTitleStyle: {
           color: "white",
           alignSelf: "center",
