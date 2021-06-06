@@ -10,6 +10,7 @@ import {
  const initialState ={
      userAddress:null,
      mnemonic : null,
+     balance : 0,
      isAuthenticated:false,
      isLoading:false,
      type:''
