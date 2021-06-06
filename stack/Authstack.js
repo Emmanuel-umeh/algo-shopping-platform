@@ -25,10 +25,7 @@ const Authstack = ({ navigation }) => (
         title: "Recover Account",
         headerTitleStyle: {
           color: "white",
-        },
-        // headerRight: () => (
-
-        // ),
+        }
       }}
       name="Recover"
       component={Recover}
