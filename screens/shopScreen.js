@@ -127,16 +127,7 @@ class Shop extends Component {
           />
         </View>
 
-        <TouchableOpacity
-          style={styles.profileBtn}
-          onPress={() => {
-        
-            this.props.navigation.navigate("Profile");
-          }}
-        >
-          <Text style={styles.loginText}>Go To Profile</Text>
-        </TouchableOpacity>
-        {/* </View> */}
+     
       </SafeAreaView>
     );
   }
