@@ -80,6 +80,7 @@ class Shop extends Component {
         />
       ),
     });
+    console.log({mnemonic})
     this.props.fetch_balance(mnemonic);
   }
   _renderItem = ({ item, index }) => {
