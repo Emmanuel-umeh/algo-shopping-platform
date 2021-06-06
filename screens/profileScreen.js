@@ -8,10 +8,6 @@ export default function Profile() {
 const {mnemonic, userAddress, balance} = useSelector(state => state.auth)
 const dispatch = useDispatch()
 
-// useEffect(() => {
-//   dispatch(fetch_balance(mnemonic))
- 
-// }, [])
 useFocusEffect(
   useCallback(() => {
    dispatch(fetch_balance(mnemonic));
