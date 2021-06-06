@@ -117,7 +117,7 @@ console.log({mnemonic})
     dispatch({
       type: FETCH_BALANCE,
       balance: response.data,
-    });
+    }); 
   } catch (error) {
     console.log("error from fetch balance ", { error });
   }
