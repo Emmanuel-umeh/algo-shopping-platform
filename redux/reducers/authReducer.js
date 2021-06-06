@@ -4,7 +4,8 @@ import {
     AUTH_ERROR,
     LOGIN_SUCCESS, 
     LOGIN_FAIL,
-    LOGOUT_SUCCESS
+    LOGOUT_SUCCESS,
+    FETCH_BALANCE
  } from "../actions/types"
 
  const initialState ={

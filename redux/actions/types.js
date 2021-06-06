@@ -11,4 +11,5 @@ export const LOGOUT_SUCCESS = "LOGOUT_SUCCESS" // logs out the user
 
 export const ORDER_FAILED =  'ORDER_FAILED' //order failed
 export const ORDER_SUCCESSFUL = "ORDER_SUCCESSFUL" // order was succesfsul
+export const FETCH_BALANCE = "FETCH_BALANCE" // fetch use rbalance
 
