@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { View, StyleSheet, Text, TextInput } from "react-native";
+import { View, StyleSheet, Text, TextInput, ScrollView } from "react-native";
 
 class Profile extends Component {
   render() {
     const { mnemonic, userAddress } = this.props.auth;
     return (
       <View style={styles.container}>
+        <ScrollView>
         <Text style={styles.text}>
           Please ensure you copy and store your mnemonic key down
         </Text>
@@ -37,6 +38,7 @@ class Profile extends Component {
             placeholder="Address"
           ></TextInput>
         </View>
+        </ScrollView>
       </View>
     );
   }
