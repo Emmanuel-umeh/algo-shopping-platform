@@ -143,7 +143,7 @@ export const recover = (mnemonic) => async (dispatch, getState) => {
       });
 
     } catch (error) {
-      console.log({ error });
+      console.log("error from fetch balance " ,{ error });
 
     }
   };
