@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import {StyleSheet} from "react-native"
-import Login from "../screens/loginScreen";
-import Recover from "../screens/recoverAccount";
+import Shop from "../screens/shopScreen";
+import Product from "../screens/singleProductScreen";
+import Profile from "../screens/profileScreen";
 import {MaterialIcons} from "@expo/vector-icons"
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
