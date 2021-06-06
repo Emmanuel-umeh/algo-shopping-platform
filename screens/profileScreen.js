@@ -5,7 +5,7 @@ import {useSelector} from "react-redux"
 
 export default function Profile() {
 const {mnemonic, userAddress, balance} = useSelector(state => state.auth)
-console.log(userAddress)
+console.log({userAddress})
   
   return (
 
