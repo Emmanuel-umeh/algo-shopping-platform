@@ -1,8 +1,6 @@
-import { StatusBar } from "expo-status-bar";
+
 import React from "react";
-import { loadUser } from "./redux/actions/auth.js";
 import { NavigationContainer } from "@react-navigation/native";
-import { createStackNavigator } from "@react-navigation/stack";
 import Authstack from "./stack/Authstack";
 import RootStack from "./stack/RootStack";
 import { connect } from "react-redux";
@@ -19,4 +17,4 @@ const mapStateToProps = (state) => ({
 });
 
 // export default ProjectForm
-export default connect(mapStateToProps, { loadUser })(App);
+export default connect(mapStateToProps, { })(App);
