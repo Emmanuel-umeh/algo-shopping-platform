@@ -5,6 +5,7 @@ import Shop from "../screens/shopScreen";
 import Product from "../screens/singleProductScreen";
 import { connect } from "react-redux";
 import Profile from "../screens/profileScreen";
+import Tabs from "./Tabs";
 
 const Stack = createStackNavigator();
 
@@ -18,7 +19,7 @@ const RootStack = ({ navigation }) => (
   >
     <Stack.Screen
       name="Shop"
-      component={Shop}
+      component={Tabs}
       options={{
         title: "Latest Products",
         headerTitleStyle: {
@@ -37,16 +38,7 @@ const RootStack = ({ navigation }) => (
       name="Product"
       component={Product}
     />
-    <Stack.Screen
-      options={{
-        title: "My Profile",
-        headerTitleStyle: {
-          color: "white",
-        },
-      }}
-      name="Profile"
-      component={Profile}
-    />
+    
   </Stack.Navigator>
 );
 
