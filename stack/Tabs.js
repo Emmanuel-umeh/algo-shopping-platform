@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {StyleSheet} from "react-native"
-import Account_analytics from "../account/account_analytics";
+import Profile from "../account/account_analytics";
 import Subscribe from "../account/subscription";
 import colors from '../colors/colors';
 import {MaterialIcons} from "@expo/vector-icons"
