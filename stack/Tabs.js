@@ -46,7 +46,7 @@ const Tabs = () => {
         
           style : {
             backgroundColor : "#fff",
-            borderTopColor : "#1e1e1e",
+            borderTopColor : "grey",
             paddingBottom : 5
           }
          
