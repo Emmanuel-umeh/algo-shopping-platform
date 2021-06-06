@@ -11,6 +11,7 @@ import {
 } from "react-native";
 import { connect } from "react-redux";
 import { purchase } from "../redux/actions/order";
+import { fetch_balance } from "../redux/actions/auth";
 const { width, height } = Dimensions.get("window");
 class Product extends Component {
   componentDidMount() {
@@ -97,7 +98,7 @@ const mapStateToProps = (state) => ({
   order: state.order,
 });
 
-export default connect(mapStateToProps, { purchase })(Product);
+export default connect(mapStateToProps, { purchase, fetch_balance })(Product);
 
 const styles = StyleSheet.create({
   container: {
