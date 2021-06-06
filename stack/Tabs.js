@@ -51,14 +51,14 @@ const Tabs = () => {
          
       }}
     >
-      <Tab.Screen  name="Dashboard" component={Account_analytics}></Tab.Screen>
+      <Tab.Screen  name="Home" component={Account_analytics}></Tab.Screen>
 
 
 
       
 <Tab.Screen options ={{
-  title : "Subscription"
-}} name="Cards"component={Subscribe} ></Tab.Screen>
+  title : "Profile"
+}} name="Cards"component={Profile} ></Tab.Screen>
 
 
 
