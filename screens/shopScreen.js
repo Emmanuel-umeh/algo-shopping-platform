@@ -91,13 +91,9 @@ class Shop extends Component {
         />
         <Text style={{ fontSize: 30 }}>{item.title} </Text>
         <Text> {item.price} algos</Text>
-        {/* <Text></Text> */}
-
         <TouchableOpacity
           style={styles.purchaseBtn}
           onPress={() => {
-            //   this.createAccount()
-            // alert("clicked")
             this.goToSingleProduct(item);
           }}
         >
@@ -151,12 +147,10 @@ const mapStateToProps = (state) => ({
   auth: state.auth,
 });
 
-// export default ProjectForm
 export default connect(mapStateToProps, { logout })(Shop);
 
 const styles = StyleSheet.create({
   carousel: {
-    // backgroundColor: "floralwhite",
     borderRadius: 5,
     height: 250,
     padding: 5,
