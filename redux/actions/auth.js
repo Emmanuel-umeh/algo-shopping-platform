@@ -127,7 +127,7 @@ export const recover = (mnemonic) => async (dispatch, getState) => {
   
       
       const response = await axios.get(
-        `/auth/account-balance`
+        `/purchase/account-balance`
       );
   
       // console.log({response})
