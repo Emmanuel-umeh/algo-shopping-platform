@@ -110,7 +110,7 @@ console.log({mnemonic})
 
     const body = JSON.stringify({ mnemonic });
 
-    const response = await axios.get(`/purchase/account-balance`, body, config);
+    const response = await axios.post(`/purchase/account-balance`, body, config);
 
     console.log(response.data);
 
@@ -122,3 +122,4 @@ console.log({mnemonic})
     console.log("error from fetch balance ", { error });
   }
 };
+  
