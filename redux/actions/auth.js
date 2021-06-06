@@ -101,7 +101,7 @@ export const logout = () => async (dispatch, getState) => {
 
 export const fetch_balance = (mnemonic) => async (dispatch, getState) => {
   try {
-
+console.log({mnemonic})
     const config = {
       headers: {
         "Content-Type": "application/json",
