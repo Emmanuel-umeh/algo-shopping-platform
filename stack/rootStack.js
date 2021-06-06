@@ -1,11 +1,9 @@
 import React from "react";
 
 import { createStackNavigator } from "@react-navigation/stack";
-import Login from "../screens/loginScreen";
 import Shop from "../screens/shopScreen";
 import Product from "../screens/singleProductScreen";
 import { connect } from "react-redux";
-import { Alert } from "react-native";
 import Profile from "../screens/profileScreen";
 
 const Stack = createStackNavigator();
@@ -27,9 +25,7 @@ const RootStack = ({ navigation }) => (
           color: "white",
           alignSelf: "center",
         },
-        // headerRight: () => (
-     
-        // ),
+
       }}
       
     />
@@ -49,9 +45,7 @@ const RootStack = ({ navigation }) => (
       headerTitleStyle: {
         color: "white",
       },
-      // headerRight: () => (
-   
-      // ),
+
     }} name="Profile" component={Profile} />
   </Stack.Navigator>
 );
