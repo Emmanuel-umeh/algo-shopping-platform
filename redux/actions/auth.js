@@ -102,15 +102,16 @@ export const logout = () => async (dispatch, getState) => {
 export const fetch_balance = (mnemonic) => async (dispatch, getState) => {
   try {
 
-    dispatch({ type: USER_LOADING }); // dispatch user loading
     const config = {
       headers: {
         "Content-Type": "application/json",
       },
     };
-    const body = JSON.stringify({ mnemonic });
 
-    const response = await axios.get(`/purchase/account-balance`, body, config);
+    const body = JSON.stringify({ price, mnemonic });
+
+    const response = await axios.post(`/purchase`, body, config);
+
     console.log(response.data);
 
     dispatch({
