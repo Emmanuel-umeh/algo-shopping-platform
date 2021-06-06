@@ -4,7 +4,7 @@ import { View, StyleSheet, Text, TextInput, ScrollView } from "react-native";
 import {useSelector} from "react-redux"
 
 export default function Profile() {
-const {mnemonic, userAddress} = useSelector(state => state.auth)
+const {mnemonic, userAddress, balance} = useSelector(state => state.auth)
   
   return (
 
