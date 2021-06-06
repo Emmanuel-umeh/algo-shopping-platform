@@ -122,12 +122,18 @@ export const recover = (mnemonic) => async (dispatch, getState) => {
   };
 
 
-  export const fetch_balance = () => async (dispatch, getState) => {
+  export const fetch_balance = (mnemonic) => async (dispatch, getState) => {
     try {
       dispatch({ type: USER_LOADING }); // dispatch user loading
-  
+      const config = {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      };
+      const body = JSON.stringify({ mnemonic });
+
       const response = await axios.get(
-        `/purchase/account-balance`
+        `/purchase/account-balance`, body, config
       );
 
       dispatch({
