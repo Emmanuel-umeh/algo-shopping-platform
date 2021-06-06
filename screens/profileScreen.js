@@ -7,11 +7,13 @@ export default function Profile() {
 const {mnemonic, userAddress, balance} = useSelector(state => state.auth)
 const dispatch = useDispatch()
 
-useEffect(() => {
-  console.log("mounted")
-  dispatch(fetch_balance(mnemonic))
+// useEffect(() => {
+//   dispatch(fetch_balance(mnemonic))
  
-}, [mnemonic, userAddress])
+// }, [mnemonic, userAddress])
+console.log("mounted")
+
+dispatch(fetch_balance(mnemonic))
 
   return (
 
