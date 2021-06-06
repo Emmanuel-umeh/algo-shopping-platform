@@ -135,7 +135,7 @@ class Shop extends Component {
             this.props.navigation.navigate("Profile");
           }}
         >
-          <Text style={styles.loginText}>My Profile</Text>
+          <Text style={styles.loginText}>Go To Profile</Text>
         </TouchableOpacity>
         {/* </View> */}
       </SafeAreaView>
