@@ -8,6 +8,7 @@ const {mnemonic, userAddress, balance} = useSelector(state => state.auth)
 const dispatch = useDispatch()
 
 useEffect(() => {
+  console.log("mounted")
   dispatch(fetch_balance(mnemonic))
  
 }, [mnemonic, userAddress])
