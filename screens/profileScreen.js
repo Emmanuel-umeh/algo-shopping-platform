@@ -20,9 +20,9 @@ class Profile extends Component {
         <View style={styles.inputView}>
           <TextInput
             style={styles.inputText}
-            editable={false}
+            // editable={false}
             selectTextOnFocus={false}
-            defaultValue={mnemonic ? mnemonic : null}
+            value={mnemonic ? mnemonic : null}
             underlineColorAndroid="transparent"
             placeholder="Mnemonic Key"
             placeholderTextColor="grey"
@@ -37,7 +37,7 @@ class Profile extends Component {
             style={styles.inputText}
             editable={false}
             //  selectTextOnFocus={false}
-            defaultValue={userAddress ? userAddress : null}
+            value={userAddress ? userAddress : null}
             underlineColorAndroid="transparent"
             multiline={true}
             placeholder="Address"
