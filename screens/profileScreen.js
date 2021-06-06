@@ -15,7 +15,7 @@ const {mnemonic, userAddress, balance} = useSelector(state => state.auth)
             <Text style = {styles.text}>Current Balance</Text>
             <Text style = {[styles.text, {
               fontWeight : "bold"
-            }]}>0 Algos</Text>
+            }]}>{balance} Algos</Text>
           </View>
         <Text style={styles.text}>
           Please ensure you copy and store your mnemonic key down
