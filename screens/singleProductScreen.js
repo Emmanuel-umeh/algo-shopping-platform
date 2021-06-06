@@ -46,6 +46,8 @@ class Product extends Component {
 
           var response = await this.props.purchase(price, mnemonic);
 
+          await this.props.fetch_balance(mnemonic);
+
           this.setState({
             loading: false,
           });
