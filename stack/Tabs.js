@@ -34,7 +34,6 @@ const screenOptions = ({route}) =>({
   }
 })
 
-const Stack = createStackNavigator()
 const Tabs = () => {
   return (
     <Tab.Navigator
@@ -46,7 +45,7 @@ const Tabs = () => {
           // inactiveTintColor: '#fff',
         
           style : {
-            backgroundColor : "#1e1e1e",
+            backgroundColor : "#fff",
             borderTopColor : "#1e1e1e",
             paddingBottom : 5
           }
