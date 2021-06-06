@@ -34,6 +34,7 @@ import {
             }
 
 
+ 
                 
         case USER_LOADING:
             return {
@@ -55,7 +56,17 @@ import {
             }
 
 
-        
+            case FETCH_BALANCE:
+                return{
+                    ...state,
+                    isAuthenticated:true, 
+                    isLoading:false,
+                    userAddress:action.userAddress,
+                    mnemonic : action.mnemonic,
+                    type:action.type
+                }
+    
+
         
            case AUTH_ERROR : 
             case LOGOUT_SUCCESS :
