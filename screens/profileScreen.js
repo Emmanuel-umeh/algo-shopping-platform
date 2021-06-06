@@ -50,6 +50,8 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 20,
     fontWeight: "bold",
+    paddingLeft : 20,
+    paddingRight : 20
   },
   inputText: {
     // height:0,
