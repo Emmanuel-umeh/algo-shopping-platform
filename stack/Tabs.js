@@ -90,44 +90,7 @@ const Tabs = () => {
   );
 };
 
-const styles = StyleSheet.create({
 
-shadow : {
-    shadowColor : "#7F5DF0",
-    shadowOffset : {
-        width : 0,
-        height : 10
-    },
-    shadowOpacity : 0.25,
-    shadowRadius : 3.5,
-    elevation : 5
-},
-container : {
-    alignContent : "center",
-    justifyContent : "center",
-    top : 10
-},
-payout_button : {
-    top : -30,
-    justifyContent : "center",
-    alignItems : "center",
-    shadowColor : "#7F5DF0",
-    shadowOffset : {
-        width : 0,
-        height : 10
-    },
-    shadowOpacity : 0.25,
-    shadowRadius : 3.5,
-    elevation : 5
-},
-payout_view : {
-    width : 70,
-    height : 70,
-    borderRadius : 35,
-    backgroundColor : "#e32f45"
-
-}
-})
 export default Tabs;
 
 
