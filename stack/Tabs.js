@@ -5,6 +5,7 @@ import Product from "../screens/singleProductScreen";
 import Profile from "../screens/profileScreen";
 import {MaterialIcons} from "@expo/vector-icons"
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createStackNavigator } from '@react-navigation/stack';
 
 const Tab = createBottomTabNavigator();
 
@@ -33,7 +34,7 @@ const screenOptions = ({route}) =>({
   }
 })
 
-
+const Stack = createStackNavigator()
 const Tabs = () => {
   return (
     <Tab.Navigator
@@ -63,7 +64,7 @@ const Tabs = () => {
         },
       }}
     />
-    <Tab.Screen
+    <Stack.Screen
       options={{
         title: "Product",
         headerTitleStyle: {
