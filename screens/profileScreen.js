@@ -13,9 +13,7 @@ class Profile extends Component {
             <Text style = {styles.text}>Current Balance</Text>
             <Text style = {styles.text}>0 Algos</Text>
           </View>
-        <Text style={[styles.text, {
-          paddingTop : 4
-        }]}>
+        <Text style={[styles.text]}>
           Please ensure you copy and store your mnemonic key down
         </Text>
 
@@ -60,6 +58,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: "bold",
     padding : 20,
+    paddingTop : 0,
 
     alignSelf : "center"
   },
