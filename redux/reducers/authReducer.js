@@ -68,22 +68,9 @@ import {
                 type:action.type
             }
         
-   
-
-
 
                 
         default:
             return state;
     }
  }
-//  {
-
-//     id: 
-//     "5e8af6ffacf76a00175c3228", 
-//     username: "goodness account", 
-//     email: "python@gmail.com", date: "2020-04-06T09:31:43.999Z"}
-//  }
-
-// user.username 
-// user.email 
