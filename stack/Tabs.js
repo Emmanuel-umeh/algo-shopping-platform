@@ -11,7 +11,7 @@ const Tab = createBottomTabNavigator();
 const screenOptions = ({route}) =>({
   tabBarIcon : ({focused}) => {
     let icon = '';
-    const color = focused ? colors.safron : "#828282"
+    const color = focused ? colors.red : "#828282"
     const size = 24
 
 
