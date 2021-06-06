@@ -10,8 +10,6 @@ import axios from "axios"
 
 axios.defaults.baseURL = "https://algorandapi.herokuapp.com";
 
-
-
 // algosdk.secretKeyToMnemonic
 export const login = () => async (dispatch, getState) => {
   try {
