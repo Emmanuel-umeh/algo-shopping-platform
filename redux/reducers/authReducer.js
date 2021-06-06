@@ -60,10 +60,7 @@ import {
             case FETCH_BALANCE:
                 return{
                     ...state,
-                    isAuthenticated:true, 
-                    isLoading:false,
-                    userAddress:action.userAddress,
-                    mnemonic : action.mnemonic,
+                    balance : action.balance,
                     type:action.type
                 }
     
