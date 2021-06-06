@@ -10,7 +10,7 @@ import {
 } from "react-native";
 import Carousel from "react-native-snap-carousel";
 import { Ionicons } from "@expo/vector-icons";
-import { logout } from "../redux/actions/auth";
+import { logout, fetch_balance } from "../redux/actions/auth";
 import { connect } from "react-redux";
 
 class Shop extends Component {
@@ -79,6 +79,8 @@ class Shop extends Component {
         />
       ),
     });
+this.props.fetch_balance()
+    
   }
   _renderItem = ({ item, index }) => {
     return (
@@ -137,7 +139,7 @@ const mapStateToProps = (state) => ({
   auth: state.auth,
 });
 
-export default connect(mapStateToProps, { logout })(Shop);
+export default connect(mapStateToProps, { logout, fetch_balance })(Shop);
 
 const styles = StyleSheet.create({
   carousel: {
