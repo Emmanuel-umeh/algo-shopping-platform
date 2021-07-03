@@ -1,0 +1,21 @@
+-------------------- Auto-Git Log --------------------
+		Sat Jul 03 2021 22:03:29 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* app.json
+* package.json
+* screens/shopScreen.js
+* stack/Authstack.js
+* stack/Tabs.js
+* stack/rootStack.js
+
+
+Created files:
+* .autogit/autogit.json
+
+
+Deleted files:
+
+
+Renamed files:

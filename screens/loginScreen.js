@@ -2,6 +2,17 @@ import React, { Component } from 'react'
 import { StyleSheet, Text, View, ActivityIndicator, TouchableOpacity,Dimensions } from 'react-native';
 import { connect } from 'react-redux';
 import {login} from "../redux/actions/auth"
+
+import {
+  AdMobBanner,
+  AdMobInterstitial,
+  PublisherBanner,
+  AdMobRewarded,
+  setTestDeviceIDAsync,
+} from 'expo-ads-admob';
+
+// Set global test device ID
+
 const {width,height} = Dimensions.get("window")
  class Login extends Component {
     constructor(props){
@@ -37,10 +48,25 @@ const {width,height} = Dimensions.get("window")
  
     }
     
+   async componentDidMount(){
+      await setTestDeviceIDAsync('EMULATOR');
+
+      {/* // Display an interstitial */}
+ await AdMobInterstitial.setAdUnitID('ca-app-pub-3940256099942544/1033173712'); // Test ID, Replace with your-admob-unit-id
+await AdMobInterstitial.requestAdAsync();
+await AdMobInterstitial.showAdAsync()
+
+
+
+// Display a rewarded ad
+// await AdMobRewarded.setAdUnitID('ca-app-pub-3940256099942544/5224354917'); // Test ID, Replace with your-admob-unit-id
+// await AdMobRewarded.requestAdAsync();
+// await AdMobRewarded.showAdAsync();
+    }
     render() {
         return (
             <View style={styles.container}>
-
+{/* 
 {this.state.loading && (
           <View style={styles.spinner}>
             <ActivityIndicator size="large" color="crimson" />
@@ -61,8 +87,25 @@ const {width,height} = Dimensions.get("window")
                 this.recover()
             }}> 
               <Text style={styles.loginText}>Recover Account</Text>
-            </TouchableOpacity>
+            </TouchableOpacity> */}
     
+
+
+<AdMobBanner
+  bannerSize="fullBanner"
+  adUnitID="ca-app-pub-3940256099942544/6300978111" // Test ID, Replace with your-admob-unit-id
+  servePersonalizedAds // true or false
+  onDidFailToReceiveAdWithError={console.log} />
+
+{/* // Display a DFP Publisher banner */}
+{/* <PublisherBanner
+  bannerSize="fullBanner"
+  adUnitID="ca-app-pub-3940256099942544/6300978111" // Test ID, Replace with your-admob-unit-id
+  onDidFailToReceiveAdWithError={this.bannerError}
+  onAdMobDispatchAppEvent={this.adMobEvent} /> */}
+
+
+
       
           </View>
         )
