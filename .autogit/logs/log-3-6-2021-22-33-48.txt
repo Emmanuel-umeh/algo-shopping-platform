@@ -1,0 +1,19 @@
+-------------------- Auto-Git Log --------------------
+		Sat Jul 03 2021 22:33:48 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* app.json
+* package.json
+* screens/loginScreen.js
+* yarn.lock
+
+
+Created files:
+* .autogit/logs/log-3-6-2021-22-3-29.txt
+
+
+Deleted files:
+
+
+Renamed files:
