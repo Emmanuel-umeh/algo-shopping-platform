@@ -1,11 +1,8 @@
 import React, { Component } from "react";
-import { StyleSheet } from "react-native";
 import Shop from "../screens/shopScreen";
-import Product from "../screens/singleProductScreen";
 import Profile from "../screens/profileScreen";
 import { MaterialIcons } from "@expo/vector-icons";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { createStackNavigator } from "@react-navigation/stack";
 
 const Tab = createBottomTabNavigator();
 
@@ -40,8 +37,6 @@ const Tabs = () => {
       tabBarOptions={{
         showLabel: true,
         activeTintColor: "crimson",
-        // inactiveTintColor: '#fff',
-
         style: {
           backgroundColor: "#fff",
           borderTopColor: "grey",
@@ -60,16 +55,6 @@ const Tabs = () => {
           },
         }}
       />
-      {/* <Stack.Screen
-      options={{
-        title: "Product",
-        headerTitleStyle: {
-          color: "white",
-        },
-      }}
-      name="Product"
-      component={Product}
-    /> */}
       <Tab.Screen
         options={{
           title: "My Profile",

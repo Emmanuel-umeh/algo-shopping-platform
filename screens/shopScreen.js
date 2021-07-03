@@ -13,6 +13,11 @@ import { Ionicons } from "@expo/vector-icons";
 import { logout, fetch_balance } from "../redux/actions/auth";
 import { connect } from "react-redux";
 
+import {
+  AdMobBanner,
+  setTestDeviceIDAsync
+} from "expo-ads-admob";
+
 class Shop extends Component {
   constructor(props) {
     super(props);
