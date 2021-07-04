@@ -7,7 +7,7 @@
     "icon": "./assets/icon.png",
     "entryPoint": "./index.js",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/user.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -28,7 +28,7 @@
       "package": "com.megamind123456.algoshoppingplatform",
       "config": {
   
-        "googleMobileAdsAppId": "ca-app-pub-3940256099942544~3347511713" 
+        "googleMobileAdsAppId": "ca-app-pub-7817624951837976/7077780480" 
      
       }
       

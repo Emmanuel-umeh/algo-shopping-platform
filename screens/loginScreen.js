@@ -199,11 +199,11 @@ import {
   PublisherBanner,
 } from 'expo-ads-admob';
 import React, { Component } from 'react'
-import { SafeAreaView, ScrollView } from 'react-native'
+import { SafeAreaView, ScrollView, View } from 'react-native'
 import { Button, Text } from 'react-native-elements'
 
-AdMobInterstitial.setAdUnitID("ca-app-pub-3940256099942544/1033173712")
-AdMobInterstitial.setTestDeviceID('EMULATOR')
+AdMobInterstitial.setAdUnitID("ca-app-pub-7817624951837976/1442310421")
+// AdMobInterstitial.setTestDeviceID('EMULATOR')
 
 
 class Login extends Component {
@@ -241,15 +241,15 @@ class Login extends Component {
     return (
       <ScrollView>
         <SafeAreaView style={{ margin: 20 }}>
-          <Text h2>GOOGLE ADMOB</Text>
-          <Text>
-            Set Ad Unit Id, Interstitial Id & Rewarded Id only on the top level
-            component once.
-          </Text>
+          <Text h2>Divine and Chains ADMOB</Text>
+          
           <Text h4>Banner Ad</Text>
-          <AdMobBanner bannerSize="mediumRectangle" adUnitID={"ca-app-pub-3940256099942544/6300978111"} />
+          <AdMobBanner bannerSize="mediumRectangle" adUnitID={"ca-app-pub-7817624951837976/7077780480"} />
           {/* <Text h4>Publisher Banner</Text>
           <PublisherBanner bannerSize="banner" adUnitID={BANNER_ID} /> */}
+          <View style  = {{
+            marginTop : 80
+          }}>
           <Text h4>Interstitial Ad</Text>
           <Button
             title="Open"
@@ -258,6 +258,8 @@ class Login extends Component {
             onPress={this._openInterstitial}
           />
        
+          </View>
+        
         </SafeAreaView>
       </ScrollView>
     )
